@@ -1,5 +1,5 @@
 title: "Blog Title"
-author: "Blog Author"
+author: "Huzhiyuan Long"
 description: 'Made with test test test <b style="color: #f45;">&lt;3</b>'
 permalink: /:title/
 lang: "en"
@@ -22,7 +22,7 @@ navigation: # accepts {file, title, url, icon, sidebaricon}
 external: # shows a footer with social links - for available icons see fontawesome.com/icons
   - { title: Mail, icon: envelope, url: "huzhiyuan.long@outlook.com" }
   - { title: Github, icon: github, url: "https://github.com/C-none" }
-  - { title: Subscribe, icon: rss, url: "/feed.xml" }
+  # - { title: Subscribe, icon: rss, url: "/feed.xml" }
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
