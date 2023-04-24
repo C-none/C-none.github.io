@@ -11,14 +11,18 @@ date_format: "%B %d, %Y"
 show_excerpts: true # show article excerpts on the home page
 show_frame: true # adds a gray frame to the site
 show_sidebar: true # show a sidebar instead of the usual header
-minimal: true # use a dark header
-mathjax: true # use katex
+minimal: false # use a dark header
+show_footer: true # show a footer with social links
+show_social: true # show social links in the header
+show_readtime: true # show an estimated read time for each article
+show_date: true # show the date of each article
+show_author: true # show the author of each article
 
 # Menu
 
 navigation: # accepts {file, title, url, icon, sidebaricon}
   - { title: "Home", icon: home, file: "index.html" }
-  - { title: "Abouttt", icon: fa-solid fa-user, file: "README.md" }
+  - { title: "About", icon: user, file: "README.md" }
 
 external: # shows a footer with social links - for available icons see fontawesome.com/icons
   - { title: Mail, icon: envelope, url: "huzhiyuan.long@outlook.com" }
