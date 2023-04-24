@@ -17,8 +17,8 @@ mathjax: true # use katex
 # Menu
 
 navigation: # accepts {file, title, url, icon, sidebaricon}
-  - { icon: home, file: "index.html" }
-  - { icon: user, file: "README.md" }
+  - { title: "Home", icon: home, file: "index.html" }
+  - { title: "About", icon: fa-solid fa-user, file: "README.md" }
 
 external: # shows a footer with social links - for available icons see fontawesome.com/icons
   - { title: Mail, icon: envelope, url: "huzhiyuan.long@outlook.com" }
