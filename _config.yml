@@ -1,6 +1,6 @@
 title: "Blog Title"
 author: "Huzhiyuan Long"
-description: 'Made with test test test <b style="color: #f45;">&lt;3</b>'
+description: 'Made with <b style="color: #f45;">&lt;3</b>'
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -12,11 +12,6 @@ show_excerpts: true # show article excerpts on the home page
 show_frame: true # adds a gray frame to the site
 show_sidebar: true # show a sidebar instead of the usual header
 minimal: false # use a dark header
-show_footer: true # show a footer with social links
-show_social: true # show social links in the header
-show_readtime: true # show an estimated read time for each article
-show_date: true # show the date of each article
-show_author: true # show the author of each article
 
 # Menu
 
@@ -25,7 +20,7 @@ navigation: # accepts {file, title, url, icon, sidebaricon}
   - { title: "About", icon: user, file: "README.md" }
 
 external: # shows a footer with social links - for available icons see fontawesome.com/icons
-  - { title: Mail, icon: envelope, url: "huzhiyuan.long@outlook.com" }
+  - { title: Mail, icon: envelope, url: "mailto:huzhiyuan.long@outlook.com" }
   - { title: Github, icon: github, url: "https://github.com/C-none" }
   # - { title: Subscribe, icon: rss, url: "/feed.xml" }
 
