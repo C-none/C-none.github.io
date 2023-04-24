@@ -1,7 +1,6 @@
 ---
 title:  "Advanced examples"
 mathjax: true
-pu
 layout: post
 # categories: media
 ---
