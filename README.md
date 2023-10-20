@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "how to use this theme"
 icon: user 
 permalink: "/about/"
 layout: page
