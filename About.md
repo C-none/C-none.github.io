@@ -9,7 +9,7 @@ My name is Huzhiyuan Long(龙胡志远). My research interest is in computer gra
 
 I have been mentored by Professor [Jia](http://sse.tongji.edu.cn/jiajinyuan/) in [his lab](https://smart3d.tongji.edu.cn/en/Home.htm) during my undergraduate study(2021.12 - now). I initially assisted his graduate students in Web3D research. Driven by my passion for rendering, I later independently conducted a collaborative rendering project under his guidance, and eventually published our results in [CCF CAD/Graphics 2023](https://dmcv.sjtu.edu.cn/cadgraphics2023/).
 
-I once focused on programming competition and participated in [Codeforces](https://codeforces.com/profile/no2newbie) contest with best rating 1777
+I used to be interested in programming competitions and took part in the [Codeforces](https://codeforces.com/profile/no2newbie) contest, where I achieved a rating of 1777(<font color=Blue>expert</font>) at my best.
 
 ------------------
 
