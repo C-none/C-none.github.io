@@ -1,7 +1,7 @@
 ---
 title: "how to use this theme"
 icon: user 
-permalink: "/info/"
+permalink: "/usage/"
 layout: page
 ---
 

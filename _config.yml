@@ -26,7 +26,7 @@ external: # shows a footer with social links - for available icons see fontaweso
   # - { title: Subscribe, icon: rss, url: "/feed.xml" }
 
 comments:
-#  disqus_shortname: ""    # see https://disqus.com/
+  disqus_shortname: "" # see https://disqus.com/
 #  isso_domain: ""         # see https://posativ.org/isso/
 
 plugins:
