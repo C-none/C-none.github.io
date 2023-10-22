@@ -53,6 +53,19 @@ This project is based on [smallpt](https://www.kevinbeason.com/smallpt/), a basi
   	</div>
 </center>
 
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="../assets/pic/my_smallpt/2500spp.png " width = "80%" alt=""/>
+    <br>
+    <div style="color:orange;
+    display: inline-block;
+    color: #AAA;
+    padding: 2px;">
+      artifacts show up in this scene may be caused by too many mirros and glasses. The standard scene did not have this problem as shown above.
+  	</div>
+</center>
+
 ## My code 
 
 <strong>prerequisite</strong>: openmp, c++11
