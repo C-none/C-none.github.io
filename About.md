@@ -15,7 +15,7 @@ I used to be interested in programming competitions and took part in the [Codefo
 
 ## Interests
 
-During my high school, I was fascinated by anime style videos made by MMD(MikuMikuDance) and wanted to make these virtual characters as vivid and real as possible. Therefore, I stepped into computer graphics at university. As I learned more about computer graphics, I gradually realized that simulating motion and light transport is the core of rendering photorealistic graphics. I finally chose rendering as my direction for further research.
+During my high school, I was fascinated by anime style videos made by [MMD](https://learnmmd.com/what-is-mikumikudance/)(MikuMikuDance) and wanted to make these virtual characters as vivid and real as possible. Therefore, I stepped into computer graphics at university. As I learned more about computer graphics, I gradually realized that simulating motion and light transport is the core of rendering photorealistic graphics. I finally chose rendering as my direction for further research.
 
 ------------------
 
