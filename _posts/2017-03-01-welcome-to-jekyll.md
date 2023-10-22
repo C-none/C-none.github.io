@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Jekyll"
-category: post
+category: publication
 layout: post
 ---
 

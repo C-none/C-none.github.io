@@ -1,8 +1,8 @@
 ---
 title:  "Advanced examples"
+category: post
 mathjax: true
 layout: post
-category: publication
 excerpt_separator: <!--more-->
 ---
 test test
