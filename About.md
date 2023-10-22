@@ -1,7 +1,7 @@
 ---
 title: "About"
 icon: user 
-permalink: "/about/"
+permalink: "/"
 layout: page
 ---
 
