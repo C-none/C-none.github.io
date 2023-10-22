@@ -1,5 +1,6 @@
 ---
 title:  "Markdown examples"
+category: post
 layout: post
 ---
 
@@ -40,7 +41,7 @@ Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, tur
 ## Table
 
 | Title 1          | Title 2          | Title 3         | Title 4         |
-|------------------|------------------|-----------------|-----------------|
+| ---------------- | ---------------- | --------------- | --------------- |
 | First entry      | Second entry     | Third entry     | Fourth entry    |
 | Fifth entry      | Sixth entry      | Seventh entry   | Eight entry     |
 | Ninth entry      | Tenth entry      | Eleventh entry  | Twelfth entry   |

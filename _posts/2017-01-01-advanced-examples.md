@@ -2,7 +2,7 @@
 title:  "Advanced examples"
 mathjax: true
 layout: post
-categories: media
+category: media publication
 excerpt_separator: <!--more-->
 ---
 test test
