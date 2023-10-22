@@ -16,6 +16,16 @@ excerpt_separator: <!--more-->
     padding: 2px;">
       result for a complex scene with 2500 samples per pixel
   	</div>
+    This project is based on [smallpt](https://www.kevinbeason.com/smallpt/), a basic path tracing renderer. I added some features to it and made it more practical.
+
+- [x] support for parallelogram
+- [x] Importance sampling of light sourcesThis project is based on [smallpt](https://www.kevinbeason.com/smallpt/), a basic path tracing renderer. I added some features to it and made it more practical.
+
+- [x] support for parallelogram
+- [x] Importance sampling of light sourcesThis project is based on [smallpt](https://www.kevinbeason.com/smallpt/), a basic path tracing renderer. I added some features to it and made it more practical.
+
+- [x] support for parallelogram
+- [x] Importance sampling of light sources
 </center>
 
 <!--more-->
