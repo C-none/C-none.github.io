@@ -1,6 +1,6 @@
 ---
 title:  "Markdown examples"
-category: publication
+category: post
 layout: post
 ---
 
