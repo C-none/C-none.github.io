@@ -4,10 +4,10 @@ category: post
 layout: post
 excerpt_separator: <!--more-->
 ---
-test 5
+test 6
 
 <figure>
-    <div height=400px>
+    <div style="max-height: 400px">
     <img style="float: left; height: auto; max-height: 100%; border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="../assets/pic/my_smallpt/2500spp.png " title="2500spp result"/>
