@@ -4,7 +4,7 @@ category: post
 layout: post
 excerpt_separator: <!--more-->
 ---
-test 1
+test 2
 
 <figure>
     <div style="max-height: 400px; display: flex;  align-items: flex-start;">
