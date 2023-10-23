@@ -2,7 +2,7 @@
 posts %} {% if post.categories contains cat %}
 <article>
   {% include meta.html post=post %}
-  <div style="max-height: 200px">{{ post.excerpt }}</div>
+  <div style="height: 200px">{{ post.excerpt }}</div>
   <!-- <div class="more"><a href="{{ post.url | relative_url }}">read more</a></div> -->
 </article>
 {% endif %} {% endfor %}
