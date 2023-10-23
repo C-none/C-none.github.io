@@ -3,6 +3,7 @@ title:  "Easy software rasterizer"
 category: post
 layout: post
 excerpt_separator: <!--more-->
+show_sidebar: false
 ---
 
 <figure style="max-height: 400px; display: flex;  align-items: flex-start;">
