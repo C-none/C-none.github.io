@@ -16,7 +16,7 @@ test 5
     <figcaption style="flex: 2; valign: center; color:orange;
     display: inline-block;
     color: #AAA;
-    padding: 2px;">
+    padding: 8px;">
       result for a complex scene with 2500 samples per pixel
   	</figcaption>
     </div>
