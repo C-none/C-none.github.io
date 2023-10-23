@@ -10,7 +10,7 @@ excerpt_separator: <!--more-->
     <img style="object-fit: cover; height: auto; width:auto; max-height: 100%; " 
     src="../assets/pic/my_smallpt/2500spp.png " title="2500spp result"/>
     </div>
-    <div style="height: auto;">
+    <div style="height: 400px;">
     <figcaption style="flex: 2; vertical-align: middle; color:orange;
     display: inline-block;
     color: #AAA;
@@ -20,7 +20,7 @@ excerpt_separator: <!--more-->
     </div>
 </figure>
 <!--more-->
-test 8
+test 9
 
 This project is based on [smallpt](https://www.kevinbeason.com/smallpt/), a basic path tracing renderer. I added some features to it and made it more practical.
 
