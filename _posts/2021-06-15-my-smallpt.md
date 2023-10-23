@@ -10,15 +10,17 @@ excerpt_separator: <!--more-->
     <img style="object-fit: cover; height: auto; width:auto; max-height: 100%; " 
     src="../assets/pic/my_smallpt/2500spp.png " title="2500spp result"/>
     </div>
+    <div style="height: auto;">
     <figcaption style="flex: 2; vertical-align: middle; color:orange;
     display: inline-block;
     color: #AAA;
     padding: 8px;">
       result for a complex scene with 2500 samples per pixel
   	</figcaption>
+    </div>
 </figure>
 <!--more-->
-test 7
+test 8
 
 This project is based on [smallpt](https://www.kevinbeason.com/smallpt/), a basic path tracing renderer. I added some features to it and made it more practical.
 
