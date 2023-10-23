@@ -7,10 +7,10 @@ excerpt_separator: <!--more-->
 
 <center>
 <div style="display: flex; align-items: center; background: transparent;">
-    <img style="float: left; margin-right: 15px;" 
-    src="../assets/pic/my_smallpt/2500spp.png " width = "20%" alt="2500spp result"/>
+    <img style="float: left; margin-right: 15px; width=80%;" src="../assets/pic/my_smallpt/2500spp.png " alt="2500spp result"/>
     <p>      result for a complex scene with 2500 samples per pixel  	</p>
 <div>
+<br>
 </center>
 
 <!--more-->
