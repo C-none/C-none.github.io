@@ -6,13 +6,11 @@ excerpt_separator: <!--more-->
 ---
 
 <center>
-    <img style="float: left; margin-right: 15px; border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="../assets/pic/my_smallpt/2500spp.png " width = "20%" alt=""/>
-    <br>
-    <div style="position: relative; top: 50%; color:orange; display: inline-block; color: #AAA; padding: 2px;">
-      result for a complex scene with 2500 samples per pixel
-  	</div>
+<div style="display: flex; align-items: center; background: transparent;">
+    <img style="float: left; margin-right: 15px;" 
+    src="../assets/pic/my_smallpt/2500spp.png " width = "20%" alt="2500spp result"/>
+    <p>      result for a complex scene with 2500 samples per pixel  	</p>
+<div>
 </center>
 
 <!--more-->
