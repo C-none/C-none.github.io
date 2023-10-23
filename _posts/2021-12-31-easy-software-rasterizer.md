@@ -11,14 +11,12 @@ excerpt_separator: <!--more-->
     <img style="object-fit: cover; height: auto; width:auto; max-height: 100%; " 
     src="../assets/pic/easy-software-rasterizer/cube.jpg" title="a colorful cube"/>
     </div>
-    <div style="height: 400px;">
     <figcaption style="flex: 2; vertical-align: middle; color:orange;
     display: inline-block;
     color: #AAA;
     padding: 100px;">
       A cube with anti-aliasing
   	</figcaption>
-    </div>
 </figure>
 
 <!--more-->
