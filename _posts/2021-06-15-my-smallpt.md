@@ -6,8 +6,7 @@ excerpt_separator: <!--more-->
 ---
 test 5
 
-<figure>
-    <div style="max-height: 400px; display: flex;  align-items: flex-start;">
+<figure style="max-height: 400px; display: flex;  align-items: flex-start;">
     <div style="flex: 1; width: auto;  height: auto;  overflow: hidden; border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);">
     <img style="object-fit: cover; height: auto; width:auto; max-height: 100%; " 
@@ -19,8 +18,6 @@ test 5
     padding: 8px;">
       result for a complex scene with 2500 samples per pixel
   	</figcaption>
-    </div>
-
 </figure>
 
 <!--more-->
