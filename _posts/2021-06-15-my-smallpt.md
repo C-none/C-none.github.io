@@ -4,7 +4,7 @@ category: post
 layout: post
 excerpt_separator: <!--more-->
 ---
-test 7
+test 8
 
 <figure>
     <img style="float: left; border-radius: 0.3125em;
@@ -16,7 +16,7 @@ test 7
     padding: 2px;">
       result for a complex scene with 2500 samples per pixel
   	</figcaption>
-    
+    <br><br>
 </figure>
 
 <!--more-->
