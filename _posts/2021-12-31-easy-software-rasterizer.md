@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 ---
 
 <figure style="max-height: 400px; display: flex;  align-items: flex-start;">
-    <div style="flex: 1; width: auto;  height: 200px; border-radius: 0.3125em;
+    <div style="flex: 1; width: auto;  height: 400px; border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);">
     <img style="object-fit: cover; height: auto; width:auto; max-height: 100%; " 
     src="../assets/pic/easy-software-rasterizer/cube.jpg" title="a colorful cube"/>

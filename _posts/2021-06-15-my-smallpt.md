@@ -14,7 +14,7 @@ excerpt_separator: <!--more-->
     <figcaption style="flex: 2; vertical-align: middle; color:orange;
     display: inline-block;
     color: #AAA;
-    padding: 80px;">
+    padding: 120px;">
       result for a complex scene with 2500 samples per pixel
   	</figcaption>
     </div>
