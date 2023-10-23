@@ -20,7 +20,6 @@ excerpt_separator: <!--more-->
     </div>
 </figure>
 <!--more-->
-test 9
 
 This project is based on [smallpt](https://www.kevinbeason.com/smallpt/), a basic path tracing renderer. I added some features to it and made it more practical.
 
