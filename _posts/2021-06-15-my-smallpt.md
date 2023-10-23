@@ -9,7 +9,7 @@ test 7
 <figure>
     <img style="float: left; border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="../assets/pic/my_smallpt/2500spp.png " width = "50%" title="2500spp result"/>
+    src="../assets/pic/my_smallpt/2500spp.png " width = "30%" title="2500spp result"/>
     <figcaption style="color:orange;
     display: inline-block;
     color: #AAA;
