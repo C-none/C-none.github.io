@@ -4,11 +4,11 @@ category: post
 layout: post
 excerpt_separator: <!--more-->
 ---
-test 9
+test 0
 
 <figure>
-    <div style="height: 100px; display: flex;  align-items: flex-start;">
-    <img style="flex: 1; float: left; height: auto; max-height: 100%; border-radius: 0.3125em;
+    <div style="height: 400px; display: flex;  align-items: flex-start;">
+    <img style="flex: 1; height: auto; width:auto; max-height: 100%; border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="../assets/pic/my_smallpt/2500spp.png " title="2500spp result"/>
 
