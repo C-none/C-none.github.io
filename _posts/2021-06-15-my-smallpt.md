@@ -21,6 +21,8 @@ excerpt_separator: <!--more-->
 </figure>
 <!--more-->
 
+[test](./2021-12-31-easy-software-rasterizer.md)
+
 This project is based on [smallpt](https://www.kevinbeason.com/smallpt/), a basic path tracing renderer. I added some features to it and made it more practical.
 
 - [x] support for parallelogram
