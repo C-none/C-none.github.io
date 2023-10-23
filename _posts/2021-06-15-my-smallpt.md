@@ -4,12 +4,14 @@ category: post
 layout: post
 excerpt_separator: <!--more-->
 ---
-test 9
+test 1
 
 <figure>
-    <img style="float: left; width: 30%; max-width: 100%; border-radius: 0.3125em;
+    <div style="width: 60%;">
+    <img style="float: left;  max-width: 100%; border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="../assets/pic/my_smallpt/2500spp.png " title="2500spp result"/>
+    </div>
     <figcaption style="color:orange;
     display: inline-block;
     color: #AAA;
