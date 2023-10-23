@@ -5,7 +5,19 @@ layout: post
 excerpt_separator: <!--more-->
 ---
 <!-- <figure style="max-height: 400px; display: flex;  align-items: flex-start;"> -->
-<figure style="display: flex;">
+<table style="width:100%; border:10px;">
+  <tr>
+    <td style="width:30%; vertical-align:middle; border:2px;">
+        <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"
+    src="../assets/pic/my_smallpt/2500spp.png " title="2500spp result"/>
+    </td>
+    <td style="vertical-align:middle; border:20px;">
+      result for a complex scene with 2500 samples per pixel
+    </td>
+  </tr>
+</table>
+<!-- <figure style="display: flex;">
      <img style="flex: 1; width: auto; height: 200px; border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"
     src="../assets/pic/my_smallpt/2500spp.png " title="2500spp result"/>
@@ -13,9 +25,9 @@ excerpt_separator: <!--more-->
     display: inline-block;
     color: #AAA;
     padding: 5px;">
-      result for a complex scene with 2500 samples per pixel
+      
   	</figcaption>
-</figure>
+</figure> -->
 <!--more-->
 
 [test](../easy-software-rasterizer/)
