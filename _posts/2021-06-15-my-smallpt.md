@@ -10,24 +10,9 @@ excerpt_separator: <!--more-->
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="../assets/pic/my_smallpt/2500spp.png " width = "20%" alt=""/>
     <br>
-    <div style="color:orange;
-    display: inline-block;
-    color: #AAA;
-    padding: 2px;">
+    <div style="position: absolute; top: 50%; color:orange; display: inline-block; color: #AAA; padding: 2px;">
       result for a complex scene with 2500 samples per pixel
   	</div>
-
-    This project is based on [smallpt](https://www.kevinbeason.com/smallpt/), a basic path tracing renderer. I added some features to it and made it more practical.
-
-- [x] support for parallelogram
-- [x] Importance sampling of light sourcesThis project is based on [smallpt](https://www.kevinbeason.com/smallpt/), a basic path tracing renderer. I added some features to it and made it more practical.
-
-- [x] support for parallelogram
-- [x] Importance sampling of light sourcesThis project is based on [smallpt](https://www.kevinbeason.com/smallpt/), a basic path tracing renderer. I added some features to it and made it more practical.
-
-- [x] support for parallelogram
-- [x] Importance sampling of light sources
-- [ ] 
 </center>
 
 <!--more-->
