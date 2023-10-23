@@ -5,13 +5,11 @@ layout: post
 excerpt_separator: <!--more-->
 ---
 <!-- <figure style="max-height: 400px; display: flex;  align-items: flex-start;"> -->
-<figure>
-    <div style="flex: 1; width: auto;  height: 400px;  overflow: hidden; border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);">
-    <img style="object-fit: cover; height: auto; width:auto; max-height: 100%; " 
+<figure style="display: flex;">
+     <img style="flex: 1; width: auto; height: 400px; border-radius: 0.3125em; max-height: 100%;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"
     src="../assets/pic/my_smallpt/2500spp.png " title="2500spp result"/>
-    </div>
-    <figcaption style="flex: 2; vertical-align: middle; color:orange;
+    <figcaption style="flex: 2; color:orange;
     display: inline-block;
     color: #AAA;
     padding: 120px;">
