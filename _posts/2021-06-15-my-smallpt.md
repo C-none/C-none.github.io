@@ -12,7 +12,7 @@ excerpt_separator: <!--more-->
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"
     src="../assets/pic/my_smallpt/2500spp.png " title="2500spp result"/>
     </td>
-    <td style="vertical-align:middle; border:20px;">
+    <td style="vertical-align:middle; text-align:justify; border:20px;">
       result for a complex scene with 2500 samples per pixel
     </td>
   </tr>
