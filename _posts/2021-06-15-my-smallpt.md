@@ -4,23 +4,21 @@ category: post
 layout: post
 excerpt_separator: <!--more-->
 ---
-test 6
-
 <figure style="max-height: 400px; display: flex;  align-items: flex-start;">
     <div style="flex: 1; width: auto;  height: auto;  overflow: hidden; border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);">
     <img style="object-fit: cover; height: auto; width:auto; max-height: 100%; " 
     src="../assets/pic/my_smallpt/2500spp.png " title="2500spp result"/>
     </div>
-    <figcaption style="flex: 2; valign: center; color:orange;
+    <figcaption style="flex: 2; vertical-align: middle; color:orange;
     display: inline-block;
     color: #AAA;
     padding: 8px;">
       result for a complex scene with 2500 samples per pixel
   	</figcaption>
 </figure>
-
 <!--more-->
+test 7
 
 This project is based on [smallpt](https://www.kevinbeason.com/smallpt/), a basic path tracing renderer. I added some features to it and made it more practical.
 
