@@ -4,7 +4,7 @@ category: post
 layout: post
 excerpt_separator: <!--more-->
 ---
-test 2
+test 3
 
 <figure>
     <div style="max-height: 400px; display: flex;  align-items: flex-start;">
@@ -13,7 +13,7 @@ test 2
     <img style="object-fit: cover; height: auto; width:auto; max-height: 100%; " 
     src="../assets/pic/my_smallpt/2500spp.png " title="2500spp result"/>
     </div>
-    <figcaption style="flex: 2; color:orange;
+    <figcaption style="flex: 2; valign: center; color:orange;
     display: inline-block;
     color: #AAA;
     padding: 2px;">
