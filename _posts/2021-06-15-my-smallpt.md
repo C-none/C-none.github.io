@@ -6,6 +6,7 @@ excerpt_separator: <!--more-->
 ---
 
 <center>
+test1
 <div style=" background: transparent">
     <img style="border-radius: 0.3125em; box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);width=20%;" src="../assets/pic/my_smallpt/2500spp.png " alt="2500spp result"/>
     <p style="display: flex; align-items: center;">      result for a complex scene with 2500 samples per pixel  	</p>
