@@ -6,15 +6,15 @@ excerpt_separator: <!--more-->
 ---
 
 <center>
-<div style="display: flex; align-items: center; background: transparent">
+<div style=" background: transparent">
     <img style="border-radius: 0.3125em; box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);width=20%;" src="../assets/pic/my_smallpt/2500spp.png " alt="2500spp result"/>
-    <p>      result for a complex scene with 2500 samples per pixel  	</p>
+    <p style="display: flex; align-items: center;">      result for a complex scene with 2500 samples per pixel  	</p>
 <div>
 <br>
 </center>
 
 <!--more-->
-<div>
+
 This project is based on [smallpt](https://www.kevinbeason.com/smallpt/), a basic path tracing renderer. I added some features to it and made it more practical.
 
 - [x] support for parallelogram
@@ -242,5 +242,3 @@ int main(int argc, char* argv[]) {
         fprintf(f, "%d %d %d ", toInt(c[i].x), toInt(c[i].y), toInt(c[i].z));
 }
 ```
-
-</div>
