@@ -4,15 +4,21 @@ category: post
 layout: post
 excerpt_separator: <!--more-->
 ---
+test 5
 
-<center>
-test4
-<div style=" background: transparent">
-    <img style="float: left; border-radius: 0.3125em; box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08); width=30%;" src="../assets/pic/my_smallpt/2500spp.png " alt="2500spp result"/>
-    <div style="float: right; width: 70%;">      result for a complex scene with 2500 samples per pixel  	</div>
 <div>
-<br>
-</center>
+    <img style="float: left; border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="../assets/pic/my_smallpt/2500spp.png " width = "50%" alt=""/>
+    <br>
+    <div style="color:orange;
+    display: inline-block;
+    color: #AAA;
+    padding: 2px;">
+      result for a complex scene with 2500 samples per pixel
+  	</div>
+    
+</div>
 
 <!--more-->
 
