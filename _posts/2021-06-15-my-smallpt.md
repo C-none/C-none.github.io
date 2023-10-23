@@ -4,13 +4,12 @@ category: post
 layout: post
 excerpt_separator: <!--more-->
 ---
-test 5
+test 6
 
 <div>
-    <img style="float: left; border-radius: 0.3125em;
+    <img style="float: left; align: middle; border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="../assets/pic/my_smallpt/2500spp.png " width = "50%" alt=""/>
-    <br>
     <div style="color:orange;
     display: inline-block;
     color: #AAA;
