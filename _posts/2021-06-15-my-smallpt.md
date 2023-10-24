@@ -16,8 +16,6 @@ excerpt_separator: <!--more-->
 </table>
 <!--more-->
 
-here
-
 This project is based on [smallpt](https://www.kevinbeason.com/smallpt/), a basic path tracing renderer. I added some features to it and made it more practical.
 
 - [x] support for parallelogram
