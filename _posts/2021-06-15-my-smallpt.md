@@ -5,12 +5,12 @@ layout: post
 excerpt_separator: <!--more-->
 ---
 
-<table style="width:100%; border:0px; border-collapse:collapse;">
+<table style="width:100%;">
   <tr>
-    <td style="width:30%; vertical-align:middle; border:none;">
-        <img style="border-radius: 0.3125em; box-shadow:  2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" src="../assets/pic/my_smallpt/2500spp.png " title="2500spp result"/>
+    <td class="td-img">
+        <img src="../assets/pic/my_smallpt/2500spp.png " title="2500spp result"/>
     </td>
-    <td style="vertical-align:middle; text-align:justify; border: none;">
+    <td class="td-text">
       result for a complex scene with 2500 samples per pixel
     </td>
   </tr>
