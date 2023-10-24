@@ -17,7 +17,7 @@ minimal: false # use a dark header
 
 navigation: # accepts {file, title, url, icon, sidebaricon}
   - { title: "Blog", icon: blog, file: "blog.html" }
-  - { title: "Publications", icon: book, file: "publication.html" }
+  - { title: "Publications", icon: book, file: "publication.md" }
   - { title: "About", icon: user, file: "About.md" }
   - { title: "use", icon: youtube, file: "README.md" }
   - { title: "use", icon: zhihu, file: "README.md" }
