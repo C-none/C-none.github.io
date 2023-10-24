@@ -6,12 +6,12 @@ excerpt_separator: <!--more-->
 ---
 <table style="width:100%;">
   <tr>
-    <td-img>
+    <td class="td-img">
         <img src="../assets/pic/my_smallpt/2500spp.png " title="2500spp result"/>
-    </td-img>
-    <td-text>
+    </td>
+    <td class="td-text">
       result for a complex scene with 2500 samples per pixel
-    </td-text>
+    </td>
   </tr>
 </table>
 <!--more-->
