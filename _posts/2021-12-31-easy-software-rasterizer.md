@@ -18,7 +18,8 @@ show_sidebar: false
 </table>
 
 <!--more-->
-  <div class="more"><a href="https://github.com/C-none/easy-software-rasterizer">code</a></div>
+
+<div class="more"><a href="https://github.com/C-none/easy-software-rasterizer">code</a></div>
 <br>
 
 ## Introduction

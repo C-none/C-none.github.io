@@ -15,20 +15,7 @@ excerpt_separator: <!--more-->
     </td>
   </tr>
 </table>
-<!-- <figure style="display: flex;">
-     <img style="flex: 1; width: auto; height: 200px; border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"
-    src="../assets/pic/my_smallpt/2500spp.png " title="2500spp result"/>
-    <figcaption style="flex: 2; color:orange;
-    display: inline-block;
-    color: #AAA;
-    padding: 5px;">
-      
-  	</figcaption>
-</figure> -->
 <!--more-->
-
-[test1](../easy-software-rasterizer/)
 
 This project is based on [smallpt](https://www.kevinbeason.com/smallpt/), a basic path tracing renderer. I added some features to it and made it more practical.
 
