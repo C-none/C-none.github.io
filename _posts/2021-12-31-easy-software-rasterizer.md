@@ -11,7 +11,7 @@ show_sidebar: false
     <td style="width:30%; vertical-align:middle; border:none;">
         <img style="border-radius: 0.3125em; box-shadow:  2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" src="../assets/pic/easy-software-rasterizer/cube.jpg" title="a colorful cube"/>
     </td>
-    <td style="vertical-align:middle; text-align:justify; border:none;">
+    <td style="vertical-align:middle; text-align:justify; border:none; overflow-y: hidden;">
       A cube with anti-aliasing
     </td>
   </tr>
