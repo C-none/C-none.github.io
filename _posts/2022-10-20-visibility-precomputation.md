@@ -6,11 +6,18 @@ excerpt_separator: <!--more-->
 ---
 
 ## Introduction
+
 This is a simple implementation of precomputed visibility in Vulkan based on modern CPP.
 
 <!--more-->
 
 <div class="more"><a href="https://github.com/C-none/vk-precompute">code</a></div>
+
+## Purpose
+
+While observing 3D world on web, it is a challenge to load so many models instantly, which means we need to load the models selectively. Intuitively, we can load the models that are visible to the camera. However, it is time-consuming to compute the visibility of each model in real-time. Therefore, we can precompute the visibility of each model and store the result in a file. Then, we can load the models selectively according to the visibility data.
+
+--------
 
 the followings are 'input':
 
