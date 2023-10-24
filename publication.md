@@ -11,7 +11,7 @@ icon: book
 <div style="display: flex;">
 <img class="img-square" src="2023/SRSSIS/pic.jpg" title="arch">
 <div>
-<h4>SRSSIS: Super-Resolution Screen Space Irradiance Sampling for Lightweight Collaborative Web3D Rendering Architecture</h4>
+<h3 style="margin: 5px 0 5px;">SRSSIS: Super-Resolution Screen Space Irradiance Sampling for Lightweight Collaborative Web3D Rendering Architecture</h3>
 Huzhiyuan Long
 <br>
 <i>Lecture Notes in Computer Science(CAD/graphics 2023)</i>
