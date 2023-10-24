@@ -6,12 +6,12 @@ excerpt_separator: <!--more-->
 show_sidebar: false
 ---
 
-<table style="width:100%; border:0px; background-color: rgba(255, 255, 255, 0.0);">
+<table style="width:100%; border:0px; border-collapse:collapse;">
   <tr>
-    <td style="width:30%; vertical-align:middle; border:0px;">
+    <td style="width:30%; vertical-align:middle; border:none;">
         <img style="border-radius: 0.3125em; box-shadow:  2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" src="../assets/pic/easy-software-rasterizer/cube.jpg" title="a colorful cube"/>
     </td>
-    <td style="vertical-align:middle; text-align:justify; border:0px;">
+    <td style="vertical-align:middle; text-align:justify; border:none;">
       A cube with anti-aliasing
     </td>
   </tr>
