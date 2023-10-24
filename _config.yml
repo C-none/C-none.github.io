@@ -19,8 +19,8 @@ navigation: # accepts {file, title, url, icon, sidebaricon}
   - { title: "Blog", icon: blog, file: "blog.html" }
   - { title: "Publications", icon: book, file: "publication.html" }
   - { title: "About", icon: user, file: "About.md" }
-  - { title: "use", icon: blogger-b, file: "README.md" }
-  - { title: "use", icon: microblog, file: "README.md" }
+  - { title: "use", icon: youtube, file: "README.md" }
+  - { title: "use", icon: zhihu, file: "README.md" }
 
 external: # shows a footer with social links - for available icons see fontawesome.com/icons
   - { title: Mail, icon: envelope, url: "mailto:huzhiyuan.long@outlook.com" }
