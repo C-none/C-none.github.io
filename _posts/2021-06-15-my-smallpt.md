@@ -58,7 +58,7 @@ This project is based on [smallpt](https://www.kevinbeason.com/smallpt/), a basi
     display: inline-block;
     color: #AAA;
     padding: 2px;">
-      artifacts show up in this scene may be caused by too many mirros and glasses. The standard scene did not have this problem as shown above.
+        The appearance of artifacts in this scene could be due to the excessive number of mirrors and glasses. This issue was not present in the standard scene.
   	</div>
 </center>
 
