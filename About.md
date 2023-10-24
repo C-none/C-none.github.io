@@ -31,4 +31,4 @@ Code: Modern C++, JavaScript, Python
 
 Guiyang No.1 High School, Guizhou, China (2017.9 - 2020.6)
 
-Tonji University, Shanghai, China (2020.9 - now)
+Tonji University, Shanghai, China, Software Engineering (2020.9 - 2024.6)
