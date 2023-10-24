@@ -4,13 +4,13 @@ category: post
 layout: post
 excerpt_separator: <!--more-->
 ---
-<!-- <figure style="max-height: 400px; display: flex;  align-items: flex-start;"> -->
-<table style="width:100%; border:0px; background-color: rgba(255, 255, 255, 0.0);">
+
+<table style="width:100%; border:0px; border-collapse:collapse;">
   <tr>
-    <td style="width:30%; vertical-align:middle; border:0px;">
+    <td style="width:30%; vertical-align:middle; border:none;">
         <img style="border-radius: 0.3125em; box-shadow:  2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" src="../assets/pic/my_smallpt/2500spp.png " title="2500spp result"/>
     </td>
-    <td style="vertical-align:middle; text-align:justify; border:0px;">
+    <td style="vertical-align:middle; text-align:justify; border: none;">
       result for a complex scene with 2500 samples per pixel
     </td>
   </tr>
