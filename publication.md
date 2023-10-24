@@ -18,6 +18,7 @@ Huzhiyuan Long
 <br>
 <div class="more"><a href="./2023/SRSSIS/SRSSIS.pdf">author pdf</a></div> 
 <div class="more"><a href="./2023/SRSSIS/poster.pdf">poster</a></div>
+<div class="more"><a href="./2023/SRSSIS/poster.pdf">poster</a></div>
 </div>
 </div>
 ------
