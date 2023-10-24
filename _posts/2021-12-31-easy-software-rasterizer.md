@@ -18,7 +18,8 @@ show_sidebar: false
 </table>
 
 <!--more-->
-  <div class="more"><a href="https://github.com/C-none/easy-software-rasterizer">read more</a></div>
+  <div class="more"><a href="https://github.com/C-none/easy-software-rasterizer">github</a></div>
+<br>
 
 ## Introduction
 This simple rasterizer is based on modern CPP, mainly before c++20. It is a good example for learning how to write a software rasterizer, including the basic rasterizing pipeline--vertex processing, primitive assembly, clipping, rasterization, visibility test, and fragment processing, . 
