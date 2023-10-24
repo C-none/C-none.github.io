@@ -16,7 +16,7 @@ icon: book
 Huzhiyuan Long
 
 *Lecture Notes in Computer Science(CAD/graphics 2023)*
-
+<br>
 <div class="more"><a href="./2023/SRSSIS/SRSSIS.pdf">author pdf</a></div> 
 <div class="more"><a href="./2023/SRSSIS/poster.pdf">poster</a></div>
 </div>
