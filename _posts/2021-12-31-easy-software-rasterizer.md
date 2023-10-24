@@ -19,8 +19,6 @@ show_sidebar: false
 
 <!--more-->
 
-test1
-
 <div class="more"><a href="https://github.com/C-none/easy-software-rasterizer">code</a></div>
 
 ## Introduction
