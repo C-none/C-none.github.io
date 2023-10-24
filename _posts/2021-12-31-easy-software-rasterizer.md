@@ -18,8 +18,9 @@ show_sidebar: false
 </table>
 
 <!--more-->
-test
+  <div class="more"><a href="github.com/C-none/easy-software-rasterizer">read more</a></div>
 
+## Introduction
 This simple rasterizer is based on modern CPP, mainly before c++20. It is a good example for learning how to write a software rasterizer, including the basic rasterizing pipeline--vertex processing, primitive assembly, clipping, rasterization, visibility test, and fragment processing, . 
 Additionally, it supports `Blinn-Phong shading model`, `texture mapping`, and `SSAA`.
 
