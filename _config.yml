@@ -21,7 +21,11 @@ navigation: # accepts {file, title, url, icon, sidebaricon}
   - { title: "About", icon: user, file: "About.md" }
 
 external: # shows a footer with social links - for available icons see fontawesome.com/icons
-  - { title: Mail, icon: envelope, url: "" }
+  - {
+      title: Mail,
+      icon: envelope,
+      url: "javascript:linkTo_UnCryptMailto('nbjmup;uftu');",
+    }
   - { title: Github, icon: github, url: "https://github.com/C-none" }
   # - { title: Subscribe, icon: rss, url: "/feed.xml" }
 
