@@ -1,0 +1,266 @@
+% --- LaTeX CV Template - S. Venkatraman ---
+
+% --- Set document class and font size ---
+
+\documentclass[letterpaper, 11pt]{article}
+
+% --- Package imports ---
+
+\usepackage{hyperref, enumitem, longtable, amsmath, array}
+
+% --- Page layout settings ---
+
+% Set page margins
+\usepackage[left=0.7in, right=0.8in, bottom=.8in, top=0.8in, headsep=0in, footskip=.2in]{geometry}
+
+% Set line spacing
+\renewcommand{\baselinestretch}{1.2}
+
+% --- Page formatting settings ---
+
+% Set link colors
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{colorlinks=true, linkcolor=MidnightBlue, urlcolor=MidnightBlue}
+
+% Set font to Libertine, including math support
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+
+% Remove page numbering
+\pagenumbering{gobble}
+
+% Define font size and color for section headings
+\newcommand{\headingfont}{\Large\color{OliveGreen}}
+
+% --- CV section settings ---
+
+% Note: each section of this table (Education, Awards, Publications etc.) is 
+% stored in a two-column table. The left-hand column is narrow (1 inch) and is 
+% meant to store dates. The right-hand column is wide (5.2 inches) and stores 
+% the main text.  Sections in which each entry might have multiple lines 
+% (e.g., Education) are stored in a 'SectionTable' environment). Sections in 
+% which each entry might just have one line are stored in a 'SectionTableSingleSpace'
+% environment. The only difference between the two environments is the line 
+% spacing between each entry. Both environments take one argument, which is the
+% title of the section. See main document for how these environments are used.
+
+% Define settings for left-hand column in which dates are printed
+\newcolumntype{R}{>{\raggedleft}p{1in}}
+
+% Define 'SectionTable' environment
+\newenvironment{SectionTable}[1]{
+	\renewcommand*{\arraystretch}{1.7}
+	\setlength{\tabcolsep}{10pt}
+	\begin{longtable}{Rp{5.2in}} & #1 \\}
+{\end{longtable}\vspace{-.3cm}}
+
+% Define 'SectionTableSingleSpace' environment
+\newenvironment{SectionTableSingleSpace}[1]{
+	\renewcommand*{\arraystretch}{1.2}
+	\setlength{\tabcolsep}{10pt}
+	\begin{longtable}{Rp{5.2in}} & #1 \\[0.6em]}
+{\end{longtable}\vspace{-.3cm}}
+
+% --- Document starts here ---
+
+\begin{document}
+
+% --- Name and contact information ---
+
+\begin{SectionTable}{\Huge Huzhiyuan Long} &
+    huzhiyuan.long@outlook.com   $\;\boldsymbol{\cdot}\;$
+    c-none.github.io $\;\boldsymbol{\cdot}\;$
+    86+18001645607 \newline
+    Citizenship: China
+\end{SectionTable}
+
+% --- Section: Research interests ---
+
+\begin{SectionTable}{\headingfont Research interests}
+    & Computer graphics, rendering
+\end{SectionTable}
+
+% --- Section: Education ---
+
+\begin{SectionTable}{\headingfont Education}
+    % 2019 -- Present &
+    % \textbf{University 1} -- City, State \newline
+    % PhD in Subject \newline
+    % Mentors: Professors A, B. \textit{GPA: X.YZ}. \\
+
+    % 2017 -- 2019 &
+    % \textbf{University 2} -- City, State \newline
+    % MA in Subject \newline
+    % Mentors: Professors C, D. \textit{GPA: X.YZ}. \\
+
+    2020 -- present &
+    \textbf{Tongji University} -- Shanghai\newline
+    BA in Software Engineering\newline
+    Mentors: Professors Jinyuan Jia. \textit{GPA: 4.45/5(89.53/100)}. \\
+
+    % --- Un-comment the next few lines if you want to include some courses you've taken ---
+
+    % & \textbf{Selected coursework}
+    % \begin{itemize}[itemsep=0pt, leftmargin=*]
+    %     \item \textit{Statistics}: Asymptotic statistics, Mathematical statistics, Functional data analysis, High-dimensional statistics, Information theory
+    %     \item \textit{Mathematics}: Measure theory, Functional analysis, Measure-theoretic probability with martingales
+    % \end{itemize}
+
+\end{SectionTable}
+
+% --- Section: Awards, scholarships, etc ---
+
+\begin{SectionTableSingleSpace}{\headingfont Honors and scholarships}
+    % 2021 &
+    % Award 1 (Organization that gave you the award)\newline
+    % \textit{Maybe this award needs a short description}. \\
+
+    % 2020 &
+    % Award 2 (Organization that gave you the award; \href{https://en.wikibooks.org/wiki/LaTeX/Hyperlinks}{link if you want}) \\
+
+    2022 &
+    Undergraduate School-level Scholarship Third Prize (Tongji University) \\
+
+    2021 &
+    Undergraduate School-level Scholarship Third Prize (Tongji University)
+\end{SectionTableSingleSpace}
+
+% --- Section: Publications ---
+
+\begin{SectionTable}{\headingfont Publications}
+    2023 &
+    \textbf{SRSSIS: Super-Resolution Screen Space Irradiance Sampling for Lightweight Collaborative Web3D Rendering Architecture} \newline
+    \textbf{Huzhiyuan Long}, Yufan Yang, Chang Liu, Jinyuan Jia. \newline
+    \textit{Lecture Notes in Computer Science(CAD/graphics 2023)}. \\
+
+    % 2021 &
+    % \textbf{Title of your most recent research paper} \newline
+    % First author, second author, third author, fourth author. \newline
+    % \textit{Journal of something or the other}. \\
+
+\end{SectionTable}
+
+% --- Section: Research experience ---
+
+\begin{SectionTable}{\headingfont Research experience}
+    12 2021 -- Present &
+    \textbf{Smart3D Media Lab} \newline
+    Mentors: Professor Jinyuan Jia (Tongji University). \newline
+    \begin{itemize}
+        \item [1)]
+              Web3D huge model transmission based on visibility precomputation.
+        \item [2)]
+              Collaborative rendering, a rendering architecture that distributes real-time rendering tasks to both client and server simultaneously.
+    \end{itemize} \\
+
+\end{SectionTable}
+
+% --- Section: Teaching experience ---
+
+% \begin{SectionTable}{\headingfont Teaching experience}
+%     Fall 2020 &
+%     \textbf{Teaching assistant, STAT 123: Course name here (University)} \newline
+%     Topics and description of your responsibilities. Aliquam volutpat est vel massa. Sed dolor lacus, imperdiet non, ornare non, commodo eu, neque. \newline
+%     \textit{Average student rating: X/5.} \\
+
+%     Spring 2020 &
+%     \textbf{Teaching assistant, MATH 234: Course name here (University)} \newline
+%     Topics and description of your responsibilities. Aliquam volutpat est vel massa. Sed dolor lacus, imperdiet non, ornare non, commodo eu, neque. \newline
+%     \textit{Average student rating: X/5.}
+% \end{SectionTable}
+
+% --- Section: Industry experience ---
+
+% \begin{SectionTable}{\headingfont Industry experience}
+%     Summer 2020 &
+%     \textbf{Name of company (Title of job or internship)} -- City, State \newline
+%     Description of your responsibilities. Integer pretium semper justo. Proin risus. Nullam id quam. Nam neque. Phasellus at purus et lib ero lacinia dictum.  \\
+
+%     Summer 2019 &
+%     \textbf{Name of company (Title of job or internship)} -- City, State \newline
+%     Description of your responsibilities. Integer pretium semper justo. Proin risus. Nullam id quam. Nam neque. Phasellus at purus et lib ero lacinia dictum.  \\
+
+%     Summer 2018 &
+%     \textbf{Name of company (Title of job or internship)} -- City, State \newline
+%     Description of your responsibilities. Integer pretium semper justo. Proin risus. Nullam id quam. Nam neque. Phasellus at purus et lib ero lacinia dictum.  \\
+% \end{SectionTable}
+
+% --- Section: Talks and tutorials ---
+
+% \begin{SectionTable}{\headingfont Talks and tutorials}
+%     Month Year &
+%     Title of your most recent presentation \newline
+%     \textit{Name of conference, workshop, seminar, etc., or a description} \\
+
+%     Month Year &
+%     Title of your second most recent presentation \newline
+%     \textit{Name of conference, workshop, seminar, etc., or a description} \\
+
+%     Month Year &
+%     Title of your third most recent presentation \newline
+%     \textit{Name of conference, workshop, seminar, etc., or a description} \\
+% \end{SectionTable}
+
+% --- Section: Mentorship and service ---
+
+% \begin{SectionTable}{\headingfont Mentorship and service}
+%     Month Year -- Present &
+%     \textbf{Title of organization you are in (Name of your role)} \newline
+%     Description of your responsibilities. Integer pretium semper justo. Proin risus. Nullam id quam. Nam neque. Phasellus at purus et lib ero lacinia dictum. \\
+
+%     Month Year -- Month Year &
+%     \textbf{Title of organization you were in (Name of your role)} \newline
+%     Description of your responsibilities. Integer pretium semper justo. Proin risus. Nullam id quam. Nam neque. Phasellus at purus et lib ero lacinia dictum. \\
+% \end{SectionTable}
+
+% --- Section: Professional society memberships ---
+
+% \begin{SectionTable}{\headingfont Professional memberships}
+%     Year -- Present &
+%     Name of professional society \newline
+%     \textit{Short description or conferences you attended.} \\
+
+%     Year -- Present &
+%     Name of professional society \newline
+%     \textit{Short description or conferences you attended.} \\
+% \end{SectionTable}
+
+% --- Section: Awards ---
+
+\begin{SectionTable}{\headingfont Awards}
+    2022 &
+    China Collegiate Programming Contest - Shanghai Collegiate Programming Contest Bronze Medal \\
+    2022 &
+    Group Programming Ladder Tournament Individual Third Prize \\
+    2021 &
+    “Dream-it” CUP Tongji University Programming Contest Third Place Award \\
+    2021 &
+    Tongji University Mathematical Modeling Competition Third Prize \\
+\end{SectionTable}
+
+\begin{SectionTable}{\headingfont Technical skills}
+    & \textbf{Programming languages} \newline
+    Proficient in: modern C++ \newline
+    Familiar with: JavaScript, Python \\
+
+    % & \textbf{Software} \newline
+    % \LaTeX, Git, another piece of software \\
+
+    & \textbf{Languages} \newline
+    Chinese, English, Japanese(JLPT N2)
+\end{SectionTable}
+
+% --- Section: Other interests/hobbies ---
+
+% \begin{SectionTable}{\headingfont Other interests}
+%     & Some of your hobbies, etc.
+% \end{SectionTable}
+
+% --- End of CV! ---
+
+\end{document}
+
+
+
+
+
