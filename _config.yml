@@ -21,11 +21,7 @@ navigation: # accepts {file, title, url, icon, sidebaricon}
   - { title: "About", icon: user, file: "About.md" }
 
 external: # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {
-      title: Mail,
-      icon: envelope,
-      url: "&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#117;&#122;&#104;&#105;&#121;&#117;&#97;&#110;&#46;&#108;&#111;&#110;&#103;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109;",
-    }
+  - { title: Mail, icon: envelope, url: "" }
   - { title: Github, icon: github, url: "https://github.com/C-none" }
   # - { title: Subscribe, icon: rss, url: "/feed.xml" }
 
