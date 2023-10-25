@@ -15,7 +15,7 @@ In the past, I had a keen interest in programming competitions and participated 
 
 ## Interests
 
-During my high school years, I was fascinated by anime-style videos made with [MMD](https://learnmmd.com/what-is-mikumikudance/)(MikuMikuDance). I wanted to make these virtual characters as vivid and realistic as possible. This led me to delve into computer graphics at university. As I learned more about computer graphics, I gradually realized that simulating motion and light transport is the core of rendering photorealistic graphics. Consequently, I chose rendering as my direction for further research.
+During my high school years, I was fascinated by anime-style videos made with [MMD](https://learnmmd.com/what-is-mikumikudance/)(MikuMikuDance). I wanted to make these virtual characters as vivid and realistic as possible. This led me to delve into computer graphics at university. As I learned more about computer graphics, I gradually realized that physics simulation and light transport are the core of rendering photorealistic graphics. Consequently, I chose rendering as my direction for further research.
 
 ------------------
 
