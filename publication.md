@@ -8,7 +8,7 @@ icon: book
 <img class="img-square" src="2023/SRSSIS/pic.jpg" title="arch">
 <div>
 <h3 style="margin: 5px 0 5px;">SRSSIS: Super-Resolution Screen Space Irradiance Sampling for Lightweight Collaborative Web3D Rendering Architecture</h3>
-<b>Huzhiyuan Long</b>, Yufan Yang, Chang Liu, <a href="http://sse.tongji.edu.cn/jiajinyuan/" target="_blank">Jinyuan Jia</a>
+<b>Huzhiyuan Long</b>, Yufan Yang, Chang Liu, <a href="https://sse.tongji.edu.cn/info/1204/3256.htm" target="_blank">Jinyuan Jia</a>
 <br>
 <i>Lecture Notes in Computer Science(CAD/graphics 2023)</i>
 <br>
