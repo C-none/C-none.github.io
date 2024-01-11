@@ -41,21 +41,27 @@ This [document](https://cseweb.ucsd.edu/~tzli/cse272/wi2024/homework1.pdf) sorts
 The implementation of Spherical Harmonics refers to [this](https://github.com/EpicGames/UnrealEngine/blob/072300df18a94f18077ca20a14224b5d99fee872/Engine/Shaders/Private/SHCommon.ush#L226)
 
 To project the irradiance to the SH basis,
+
 $$
 f_l^m=\int_{\Omega}I(\omega)Y_l^m(\omega)d\omega
 $$
+
 where $l$ indicates the band, $m$ indicates the order, $\omega$ is the direction of the incident light, $I(\omega)$ is the irradiance, $Y_l^m(\omega)$ is the SH basis, $\Omega$ is the solid angle, and $f_l^m$ is the corresponding SH coefficient.
 
-To estimate coefficients, 
+To estimate coefficients,
+
 $$
 f_l^m=\frac{1}{N}\sum_{i=1}^NI(\omega_i)Y_l^m(\omega_i)/pdf(\omega_i)
 $$
+
 where $N$ is the number of samples, and $pdf(\omega_i)$ is the probability density function of the direction $\omega_i$.
 
 To reconstruct the irradiance from the SH basis,
+
 $$
 I(\omega)=\sum_{l=0}^L\sum_{m=-l}^lf_l^mY_l^m(\omega)
 $$
+
 where $L$ is the band number.
 
 ### Uniform sampling on a hemisphere
