@@ -18,4 +18,6 @@ excerpt_separator: <!--more-->
 
 <!--more-->
 
-<div class="more"><a href="https://github.com/C-none/VK-screen-space-probe"></a>code</a></div>
+<div class="more"><a href="https://github.com/C-none/VK-screen-space-probe">code</a></div>
+
+## Introduction
