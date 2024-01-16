@@ -1,6 +1,7 @@
 ---
 title:  "Screen probes computing tool using Vulkan"
 category: post
+mathjax: true
 layout: post
 excerpt_separator: <!--more-->
 ---
@@ -65,5 +66,6 @@ $$
 where $L$ is the band number.
 
 ### Uniform sampling on a hemisphere
+
 
 
