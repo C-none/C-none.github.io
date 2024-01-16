@@ -2,6 +2,7 @@ title: "H. Long's Website"
 author: "Huzhiyuan Long"
 # description: 'Made with <b style="color: #f45;">&lt;3</b>'
 permalink: /:title/
+markdown: kramdown
 lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"

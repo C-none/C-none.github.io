@@ -1,5 +1,17 @@
 <header>
-  <h1><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h1>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script
+    type="text/javascript"
+    async
+    src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"
+  ></script>
+  <h1>
+    <a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a>
+  </h1>
   {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
-  <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: date_format }}</time>
+  <time datetime="{{ include.post.date | date_to_xmlschema }}"
+    >{{ include.post.date | date: date_format }}</time
+  >
 </header>
