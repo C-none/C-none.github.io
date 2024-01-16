@@ -1,7 +1,7 @@
 ---
 title:  "Screen probes computing tool using Vulkan"
 category: post
-mathjax: true
+# mathjax: true
 layout: post
 excerpt_separator: <!--more-->
 ---
