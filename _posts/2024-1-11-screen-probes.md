@@ -67,5 +67,68 @@ where $L$ is the band number.
 
 ### Uniform sampling on a hemisphere
 
+To sample a direction on a hemisphere uniformly, we need to sample the polar angle $\theta \in [0,\frac{\pi}{2})$ and the azimuthal angle $\phi \in [0,2\pi)$ respectively, where $\theta$ is the angle between normal and incident light. The probability density function of $\phi$ should be equal to a constant. But the probability density function of $\theta$ should be proportional to $\sin\theta$. 
 
+Imagine that we divide the hemisphere into infinite small rings, the probability of sampling a direction in a ring should be proportional to the perimeter of the ring. The perimeter of the ring is $2\pi\sin\theta$.
 
+To normalize the pdf, we need to divide the pdf by the integral of the pdf:
+
+$$
+pdf(\theta)=\frac{\sin\theta}{\int_0^{\frac{\pi}{2}}\sin\theta d\theta}=\sin\theta
+$$
+
+Thus, the cumulative distribution function of $\theta$ is:
+
+$$
+cdf(\theta)=\int_0^{\theta}pdf(\theta)d\theta=1-\cos\theta
+$$
+
+The inverse function of $cdf(\theta)$ is:
+
+$$
+\theta=acos(1-u)=acos(u)
+$$
+
+where $u$ is a random number in $[0,1)$.
+
+The pdf of direction is $\frac{1}{2\pi}$, because it is uniform sampling on a hemisphere.
+
+### Importance sampling on a hemisphere
+
+Considering the rendering equation:
+
+$$
+L_o(p,\omega_o)=L_e(p,\omega_o)+\int_{\Omega}f(p,\omega_i,\omega_o)L_i(p,\omega_i)(n\cdot\omega_i)d\omega_i
+$$
+
+In coding, I set the pdf of $\theta$ to be proportional to $(n\cdot\omega_i)=cos\theta$, which is the cosine term in the rendering equation. Thus, the pdf of $\theta$ is:
+
+$$
+pdf(\theta)=\frac{\cos\theta\sin\theta}{\int_0^{\frac{\pi}{2}}\cos\theta\sin\theta d\theta}=2\cos\theta\sin\theta=sin(2\theta)
+$$
+
+The cumulative distribution function of $\theta$ is:
+
+$$
+cdf(\theta)=\int_0^{\theta}pdf(\theta)d\theta=\frac{1}{2}(1-\cos(2\theta))=sin^2(\theta)
+$$
+
+The inverse function of $cdf(\theta)$ is:
+
+$$
+\theta=asin(\sqrt{u})=acos(\sqrt{1-u})=acos(\sqrt{u}) \tag{*}
+$$
+
+where $u$ is a random number in $[0,1)$.
+
+\* Let $\sqrt{u}=sin\theta$, then $u=sin^2\theta$, and $sin^2\theta+cos^2\theta=1$, so $cos\theta=\sqrt{1-u}$.
+
+The pdf of direction is $\frac{cos\theta}{\pi}$.
+
+### Something about normal map
+
+After applying normal map,some rays sampled on the hemisphere may be opposite to the geometry normal, which means the ray is transmitting inside the object.
+
+To prevent this problem, I generated the samples based on the geometry normal. My friend suggested that generating rays above the surface of the geometry each time(set the start point of the ray to be the surface point plus a small offset along the geometry normal). When the ray is opposite to the geometry normal, the ray will instant hit the nearby geometry in most cases. But this method is not robust, because of the offset.(it may pass through other geometries, like very narrow furrow)
+
+The other discussion about this problem can be found [here](https://computergraphics.stackexchange.com/questions/4374/sampling-against-geometry-normals). One way is to call BTDF, treating this ray as a transmission ray. The other way is to use displacement maps instead of normal maps.(I think it is a robust solution)
