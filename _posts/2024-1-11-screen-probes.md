@@ -23,9 +23,9 @@ excerpt_separator: <!--more-->
 
 ## Introduction
 
-In real-time rendering, lighting can be roughly divided into two parts: direct lighting which is contributed by the light source via shadow map or any other techs, and indirect lighting which is simulated by a bunch of real-time GI techs. Lumen is one of them. At the end of the Lumen pipeline, it outputs a screen space light probes attaching to the surface of the objects to indicate the indirect lighting the surface receives.
+In real-time rendering, lighting can be roughly divided into two parts: direct lighting which is contributed by the light source with one bounce via shadow map or any other techs, and indirect lighting which is simulated by a bunch of real-time GI techs. Lumen is one of them. At the end of the Lumen pipeline, it outputs a screen space light probes attaching to the surface of the objects to indicate the indirect lighting the surface receives.
 
-To be more specific, every 16(4x4)pixels is allocated a probe, which contains two or three band Spherical Harmonics coefficients. The first band is used to represent the ambient light, and the second and third bands are used to represent the directional light.
+To be more specific, every 16(4x4)pixels is allocated a probe, which contains two or three bands Spherical Harmonics coefficients. The first band is used to represent the ambient light, and the second and third bands are used to represent the directional light.
 
 According to the above, the tool output a JSON file including every probe's 27(9 coefficients * 3 RGB) float and the position in the screen space.
 
@@ -62,8 +62,6 @@ To reconstruct the irradiance from the SH basis,
 $$
 I(\omega)=\sum_{l=0}^L\sum_{m=-l}^lf_l^mY_l^m(\omega)
 $$
-
-where $L$ is the band number.
 
 ### Uniform sampling on a hemisphere
 
