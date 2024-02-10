@@ -14,6 +14,7 @@ icon: book
 <br>
 <div class="more"><a href="./2023/SRSSIS/SRSSIS.pdf" target="_blank">author pdf</a></div> 
 <div class="more"><a href="./2023/SRSSIS/poster.pdf" target="_blank">poster</a></div>
+<div class="more"><a href="doi.org/10.1007/978-981-99-9666-7_20" target="blank">doi</a></div>
 <div class="more"><a href="./2023/SRSSIS/srssis.mp4" target="_blank">video</a></div>
 </div>
 </div>
