@@ -5,7 +5,7 @@ permalink: "/"
 layout: page
 ---
 
-My name is Huzhiyuan Long (龙胡志远). My research interest lies in computer graphics, with a primary focus on rendering. I am currently seeking a PhD position for the Fall of 2024 in computer graphics. Please feel free to contact me via [email](javascript:linkTo_UnCryptMailto('nbjmup;uftu');). Here is my [CV](/assets/cv/cv.pdf).
+My name is Huzhiyuan Long (龙胡志远). My research interest lies in computer graphics, with a primary focus on rendering. I am about to graduate as a senior undergraduate student from Tongji University currently. Please feel free to contact me via [email](javascript:linkTo_UnCryptMailto('nbjmup;uftu');). Here is my [CV](/assets/cv/cv.pdf).
 
 I had the privilege of being mentored by Professor [Jia](https://sse.tongji.edu.cn/info/1204/3256.htm) in [his lab](https://smart3d.tongji.edu.cn/en/Home.htm) during my undergraduate studies(2021.12 - now). Initially, I assisted his graduate students on Web3D lightweight visualization. However, driven by my passion for rendering, I later independently conducted a collaborative rendering project under his guidance. Our results were eventually published in [CCF CAD/Graphics 2023](https://dmcv.sjtu.edu.cn/cadgraphics2023/).
 
