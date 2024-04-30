@@ -5,7 +5,7 @@ layout: post
 excerpt_separator: <!--more-->
 ---
 
-This [project](https://github.com/C-none/Web-RTRT) is still under developing.
+This [project](https://c-none.github.io/Web-RTRT) is still under developing.
 
 <!--more-->
 
