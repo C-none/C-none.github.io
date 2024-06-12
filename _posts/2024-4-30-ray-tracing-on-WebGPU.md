@@ -11,7 +11,7 @@ excerpt_separator: <!--more-->
         </td>
         <td class="td-text">
             The picture on the left is the real-time result of the project.
-            This is a real-time ray tracing [project](https://c-none.github.io/Web-RTRT) based on WebGPU. The project utilizes ReSTIR to accelerate the direct illumination (DI) and global illumination (GI) computations. Additionally, it incorporates a denoiser and an upscaler to enhance practicality for web-based applications.
+            This is a real-time ray tracing <a href="https://c-none.github.io/Web-RTRT">project</a> based on WebGPU. The project utilizes ReSTIR to accelerate the direct illumination (DI) and global illumination (GI) computations. Additionally, it incorporates a denoiser and an upscaler to enhance practicality for web-based applications.
         </td>
     </tr>
 </table>
