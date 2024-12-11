@@ -29,7 +29,7 @@ Language: Chinese, English, Japanese(N2)
 
 Code: Modern C++, JavaScript, Python
 
-API: WebGPU, Vulkan
+Tools: WebGPU, Vulkan, Falcor, Blender, UE
 
 ------------------
 
