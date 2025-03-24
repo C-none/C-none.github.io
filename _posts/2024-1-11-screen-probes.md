@@ -44,7 +44,7 @@ The implementation of Spherical Harmonics refers to [this](https://github.com/Ep
 To project the irradiance to the SH basis,
 
 $$
-f_l^m=\int_{\Omega}I(\omega)Y_l^m(\omega)d\omega
+\Large f_l^m=\int_{\Omega}I(\omega)Y_l^m(\omega)d\omega
 $$
 
 where $l$ indicates the band, $m$ indicates the order, $\omega$ is the direction of the incident light, $I(\omega)$ is the irradiance, $Y_l^m(\omega)$ is the SH basis, $\Omega$ is the solid angle, and $f_l^m$ is the corresponding SH coefficient.
@@ -52,7 +52,7 @@ where $l$ indicates the band, $m$ indicates the order, $\omega$ is the direction
 To estimate coefficients,
 
 $$
-f_l^m=\frac{1}{N}\sum_{i=1}^NI(\omega_i)Y_l^m(\omega_i)/pdf(\omega_i)
+\Large f_l^m=\frac{1}{N}\sum_{i=1}^NI(\omega_i)Y_l^m(\omega_i)/pdf(\omega_i)
 $$
 
 where $N$ is the number of samples, and $pdf(\omega_i)$ is the probability density function of the direction $\omega_i$.
@@ -60,7 +60,7 @@ where $N$ is the number of samples, and $pdf(\omega_i)$ is the probability densi
 To reconstruct the irradiance from the SH basis,
 
 $$
-I(\omega)=\sum_{l=0}^L\sum_{m=-l}^lf_l^mY_l^m(\omega)
+\Large I(\omega)=\sum_{l=0}^L\sum_{m=-l}^lf_l^mY_l^m(\omega)
 $$
 
 ### Uniform sampling on a hemisphere
@@ -72,19 +72,19 @@ Imagine that we divide the hemisphere into infinite small rings, the probability
 To normalize the pdf, we need to divide the pdf by the integral of the pdf:
 
 $$
-pdf(\theta)=\frac{\sin\theta}{\int_0^{\frac{\pi}{2}}\sin\theta d\theta}=\sin\theta
+\Large pdf(\theta)=\frac{\sin\theta}{\int_0^{\frac{\pi}{2}}\sin\theta d\theta}=\sin\theta
 $$
 
 Thus, the cumulative distribution function of $\theta$ is:
 
 $$
-cdf(\theta)=\int_0^{\theta}pdf(\theta)d\theta=1-\cos\theta
+\Large cdf(\theta)=\int_0^{\theta}pdf(\theta)d\theta=1-\cos\theta
 $$
 
 The inverse function of $cdf(\theta)$ is:
 
 $$
-\theta=acos(1-u)=acos(u)
+\Large \theta=acos(1-u)=acos(u)
 $$
 
 where $u$ is a random number in $[0,1)$.
@@ -96,25 +96,25 @@ The pdf of direction is $\frac{1}{2\pi}$, because it is uniform sampling on a he
 Considering the rendering equation:
 
 $$
-L_o(p,\omega_o)=L_e(p,\omega_o)+\int_{\Omega}f(p,\omega_i,\omega_o)L_i(p,\omega_i)(n\cdot\omega_i)d\omega_i
+\Large L_o(p,\omega_o)=L_e(p,\omega_o)+\int_{\Omega}f(p,\omega_i,\omega_o)L_i(p,\omega_i)(n\cdot\omega_i)d\omega_i
 $$
 
 In coding, I set the pdf of $\theta$ to be proportional to $(n\cdot\omega_i)=cos\theta$, which is the cosine term in the rendering equation. Thus, the pdf of $\theta$ is:
 
 $$
-pdf(\theta)=\frac{\cos\theta\sin\theta}{\int_0^{\frac{\pi}{2}}\cos\theta\sin\theta d\theta}=2\cos\theta\sin\theta=sin(2\theta)
+\Large pdf(\theta)=\frac{\cos\theta\sin\theta}{\int_0^{\frac{\pi}{2}}\cos\theta\sin\theta d\theta}=2\cos\theta\sin\theta=sin(2\theta)
 $$
 
 The cumulative distribution function of $\theta$ is:
 
 $$
-cdf(\theta)=\int_0^{\theta}pdf(\theta)d\theta=\frac{1}{2}(1-\cos(2\theta))=sin^2(\theta)
+\Large cdf(\theta)=\int_0^{\theta}pdf(\theta)d\theta=\frac{1}{2}(1-\cos(2\theta))=sin^2(\theta)
 $$
 
 The inverse function of $cdf(\theta)$ is:
 
 $$
-\theta=asin(\sqrt{u})=acos(\sqrt{1-u})=acos(\sqrt{u}) \tag{*}
+\Large \theta=asin(\sqrt{u})=acos(\sqrt{1-u})=acos(\sqrt{u}) \tag{*}
 $$
 
 where $u$ is a random number in $[0,1)$.
