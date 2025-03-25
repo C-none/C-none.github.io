@@ -21,7 +21,7 @@ excerpt_separator: <!--more-->
 
 ## requirements
 
-I have only tested this [project](https://c-none.github.io/Web-RTRT) on android 14 and windows 11 with both latest chrome and edge.
+I have only tested this [project](https://github.com/C-none/Web-RTRT) on android 14 and windows 11 with both latest chrome and edge.
 
 For windows, if you have multiple GPUs, you may need to set system -> display -> graphic settings -> choose your browser to set preference -> high performance to have a better experience.
 

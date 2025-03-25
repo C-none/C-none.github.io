@@ -1,0 +1,121 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{15pt}{10pt}
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{龙胡志远}
+
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+\contactInfo{huzhiyuan.long@outlook.com}{}{c-none.github.io}{(+86) 152-8506-5607}
+% {E-mail}{mobilephone}
+% keep the last empty braces!
+%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+ 
+% \section{个人总结}
+% 本人在校成绩优秀、乐观向上，工作负责、自我驱动力强、热爱尝试新事物，认同开放、连接、共享的Web在未来的不可替代性。在校期间长期从事可视分析(Web的2D/3D时空可视化)相关研究，对Web技术发展趋势及前端工程化解决方案有浓厚兴趣。\textbf{现任职于 BAT 集团。}
+
+% \section{\faGraduationCap\ 教育背景}
+\section{教育背景}
+\datedsubsection{\textbf{香港大学},计算机科学,\textit{硕士}}{2025.9 - 2026.11}
+\datedsubsection{\textbf{同济大学},软件工程,\textit{学士}}{2020.9 - 2024.7}
+\vspace{12pt}
+\section{发表论文}
+\datedsubsection{\textbf{SRSSIS: Super-Resolution Screen Space Irradiance Sampling for Lightweight Collaborative Web3D Rendering Architecture}. \newline
+\textbf{Huzhiyuan Long}, Yufan Yang, Chang Liu, Jinyuan Jia. \textit{CAD/graphics(CCF-C)}. }{2023.8}
+\begin{itemize}
+  \item 做为第一作者提出一种新的协同式渲染架构。
+\end{itemize}
+
+\section{项目作品}
+\textbf{实时光线追踪}
+\begin{itemize}
+  \item 在WebGPU 上构建了混合渲染管线，其中包含V-buffer，光线追踪，降噪，超分辨率四个模块。
+  \item 在光线追踪模块中，使用SAH的BVH做为加速结构，复现了ReSTIRDI \& GI 实现实时全局光照效果，复现了部分Disney BSDF做为材质。
+  \item 结合SVGF和ReLAX实现降噪模块。
+  \item 使用计算着色器进行光线求交，使用PIX进行性能分析。
+\end{itemize}
+
+\textbf{Screen probe 预计算}
+\begin{itemize}
+  \item 从属于基于UE5 Lumen的协同式渲染系统项目，负责在项目初期，提供代替Lumen输出Screen probe的接口，用于
+  测试协同式渲染系统。
+  \item 基于 Vulkan 的硬件光线追踪管线。
+  \item 使用球谐函数压缩存储Probe的光照信息。
+\end{itemize}
+
+\textbf{预计算可见性体积}
+\begin{itemize}
+  \item 基于Vulkan，在实例化场景中，预计算每个采样点的可见物体集合及其权重，从而计算每个单元格内的可见集。
+  \item 可见性体积用于辅助在前端实时加载模型时的调度传输。
+\end{itemize}
+
+\textbf{软光栅渲染器}
+\begin{itemize}
+  \item 在CPU上做三角形的光栅化，支持线性插值顶点属性，纹理采样，抗锯齿。
+\end{itemize}
+
+\textbf{软光栅渲染器}
+\begin{itemize}
+  \item 路径追踪渲染器，支持球体，多面体的求交，使用NEE对光源采样。
+\end{itemize}
+
+\section{奖项荣誉}
+% increase linespacing [parsep=0.5ex]
+\datedsubsection{中国大学生程序设计竞赛-上海市大学生程序设计竞赛 \textbf{铜奖}}{2022.9}
+\datedsubsection{团体程序设计天梯赛 \textbf{个人三等奖}}{2022.5}
+\datedsubsection{同济大学校级优秀奖学金 \textbf{三等奖*2}}{2022, 2021}
+\vspace{12pt}
+% \section{\faCogs\ IT 技能}
+\section{技术能力}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+  \item \textbf{编程语言}: C/C++, JavaScript, WGSL, GLSL, Python
+  \item \textbf{工具框架}: WebGPU, Falcor, Three.js, Vulkan, Blender, UE, Unity
+  \item \textbf{语言}: 英语（CET-6、TOEFL 96），日语（JLPT N2）
+\end{itemize}
+
+% \begin{itemize}[parsep=0.2ex]
+% %   \item LeetCodeOJ Solutions, \textit{https://github.com/hijiangtao/LeetCodeOJ}
+%   \item 第三届中国软件杯大学生软件设计大赛 \textbf{全国一等奖}( \textit{http://www.cnsoftbei.com/} ),2014 年8月
+%   \item 中国机器人大赛创意设计大赛\textbf{全国特等奖}( \textit{http://www.rcccaa.org/} ),2013年8月
+% %   \item 中国机器人大赛暨Robocup公开赛(武术擂台赛)全国一等奖,2013年10月
+%   \item 第11届北京理工大学“世纪杯”竞赛学生课外科技作品竞赛\textbf{特等奖},2013年8月
+%   \item VIS Components for security system, \textit{https://hijiangtao.github.io/ss-vis-component/}
+%   \item 个人博客：\textit{https://hijiangtao.github.io/}，更多作品见 \textit{https://github.com/hijiangtao}
+% %   \item 电视节目"爸爸去哪儿"可视化分析展示, \textit{https://hijiangtao.github.io/variety-show-hot-spot-vis/}
+% \end{itemize}
+
+% \section{\faHeartO\ 项目/作品摘要}
+% \section{项目/作品摘要}
+% \datedline{\textit{An Integrated Version of Security Monitor Vis System}, https://hijiangtao.github.io/ss-vis-component/ }{}
+% \datedline{\textit{Dark-Tech}, https://github.com/hijiangtao/dark-tech/ }{}
+% \datedline{\textit{融合社交网络数据挖掘的电视节目可视化分析系统}, https://hijiangtao.github.io/variety-show-hot-spot-vis/}{}
+% \datedline{\textit{LeetCodeOJ Solutions}, https://github.com/hijiangtao/LeetCodeOJ}{}
+% \datedline{\textit{Info-Vis}, https://github.com/ISCAS-VIS/infovis-ucas}{}
+
+
+% % \section{\faInfo\ 社会实践/其他}
+% \section{社区参与/实践其他}
+% % increase linespacing [parsep=0.5ex]
+% \begin{itemize}[parsep=0.2ex]
+%   \item 乐于参与开源社区讨论,\textbf{参与翻译 Vue.js, webpack, WebAssembly, Babel 文档，印记中文成员}
+%   \item 中国科学院大学2016秋季学期可视化与可视分析课程助教，\textit{http://vis.ios.ac.cn/infovis-ucas/}
+%   \item 未来论坛学生会成员、北理社联新闻信息中心主任、北理工软件学院学生会宣传部副部长(2012-2016)
+%   \item 2013-2015 北京市共青团“温暖衣冬”志愿者,第九届园博会志愿者,2014 FLL机器人世锦赛志愿者
+% \end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
