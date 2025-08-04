@@ -29,10 +29,11 @@ Language: Chinese, English, Japanese(N2)
 
 Code: Modern C++, JavaScript, Python
 
-Tools: WebGPU, Vulkan, Falcor, Blender, UE
+Tools: WebGPU, UE, Vulkan, Falcor, Blender,
 
 ------------------
 
 ## Education
 
 Tonji University, Shanghai, China, Software Engineering (2020.9 - 2024.6)
+Hongkong University, Hongkong, China, Computer Science (2025.9 - 2026.11)
