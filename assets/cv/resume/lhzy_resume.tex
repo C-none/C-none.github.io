@@ -43,17 +43,13 @@
 \textbf{实时光线追踪}
 \begin{itemize}
   \item 在WebGPU 上构建了混合渲染管线，其中包含V-buffer，光线追踪，降噪，超分辨率四个模块。
-  \item 在光线追踪模块中，使用SAH的BVH做为加速结构，复现了ReSTIRDI \& GI 实现实时全局光照效果，复现了部分Disney BSDF做为材质。
-  \item 结合SVGF和ReLAX实现降噪模块。
-  \item 使用计算着色器进行光线求交，使用PIX进行性能分析。
+  \item 在光线追踪模块中，使用基于SAH的BVH做为加速结构，复现了ReSTIRDI \& GI 实现实时全局光照效果，结合SVGF和ReLAX实现降噪模块。
 \end{itemize}
 
 \textbf{Screen probe 预计算}
 \begin{itemize}
-  \item 从属于基于UE5 Lumen的协同式渲染系统项目，负责在项目初期，提供代替Lumen输出Screen probe的接口，用于
-  测试协同式渲染系统。
+  \item 从属于基于UE5 Lumen的协同式渲染系统项目，负责在项目初期，提供代替Lumen输出Screen probe的接口，用于测试协同式渲染系统。
   \item 基于 Vulkan 的硬件光线追踪管线。
-  \item 使用球谐函数压缩存储Probe的光照信息。
 \end{itemize}
 
 \textbf{预计算可见性体积}
@@ -74,7 +70,7 @@
 \begin{itemize}[parsep=0.2ex]
   \item \textbf{编程语言}: C/C++, JavaScript, WGSL, GLSL, Python
   \item \textbf{工具框架}: WebGPU, Falcor, Three.js, Vulkan, Blender, UE, Unity
-  \item \textbf{语言}: 英语（CET-6、TOEFL 96），日语（JLPT N2）
+  \item \textbf{语言}: 英语，日语（JLPT N2）
 \end{itemize}
 
 % \begin{itemize}[parsep=0.2ex]
