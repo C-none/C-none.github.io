@@ -13,6 +13,8 @@ My name is Huzhiyuan Long (龙胡志远). My research interest lies in computer 
 
 ## News
 
+I have started developing [Newbie-Renderer](https://github.com/C-none/Newbie-Renderer), a research-oriented renderer built with C++23 modules, Slang, and Vulkan. Development is in progress, and I will share updates as it evolves.
+
 I recently finished a real-time ray tracing [demo](https://c-none.github.io/Web-RTRT) based on WebGPU. Check this [blog](https://c-none.github.io/ray-tracing-on-WebGPU/) for details.
 
 <!-- ------------------

@@ -1,100 +1,80 @@
 ---
-title: "how to use this theme"
+title: "local preview and development"
 icon: user 
 permalink: "/usage/"
 layout: page
 ---
 
-## Installation
+## GitHub Pages compatibility baseline
 
-Just fork this [repository](https://github.com/niklasbuschmann/contrast) and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
+This repository is pinned to the GitHub Pages runtime by using the `github-pages` gem.
 
-## Features
+Current baseline:
 
- - supports dark mode on macOS Mojave
- - optional sidebar
- - MathJax support
- - no external ressources
- - included archive page
- - supports pagination
- - feed generation
- - responsive
- - syntax highlighting
- - supports comments via [disqus](https://disqus.com/) or [isso](http://posativ.org/isso/)
+- `github-pages` `~> 232`
+- `jekyll` `3.10.0` (resolved via `github-pages`)
+- `jekyll-feed` `0.17.0` (resolved via `github-pages`)
+- `ruby` `3.3.x` for local development
 
-## Based on
+Version sources:
 
-- [Hyde](https://github.com/poole/hyde)
-- [Minima](https://github.com/jekyll/minima)
-- [Lagrange](https://github.com/LeNPaul/Lagrange)
-- [Font Awesome](http://fontawesome.io/)
-- [KaTeX](https://katex.org/)
-- [Pygments](https://github.com/richleland/pygments-css)
+- https://pages.github.com/versions/
+- https://github.com/github/pages-gem
 
-## Installation (jekyll-remote-theme method)
+## Local preview on Windows (Scoop)
 
-You can use this theme with the `jekyll-remote-theme` plugin. Just create an empty repo, copy over the `index.html` file and add this to your `_config.yml`:
+### 1. Install prerequisites
 
-```yaml
-remote_theme: niklasbuschmann/contrast@v2.11
-
-plugins:
-  - jekyll-remote-theme
+```powershell
+%USERPROFILE%\scoop\shims\scoop.cmd install ruby33 msys2
 ```
 
-Note: to enable icons you also need to copy over the `_data` folder.
+Then run MSYS2 toolchain setup once:
 
-## Config
-
-Your `_config.yml` could for example look like this:
-
-```yaml
-title: "Blog Title"
-author: "Blog Author"
-description: "My personal blog about ... something"
-permalink: /:title/
-lang: "en"
-excerpt_separator: "\n\n\n"
-date_format: "%B %d, %Y"
-
-# Layout
-
-show_excerpts: true        # show article excerpts on the home page
-show_frame: true           # adds a gray frame to the site
-show_sidebar: false        # show a sidebar instead of the usual header
-
-# Menu
-
-navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
-
-external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
-
-comments:
-#  disqus_shortname: ""    # see https://disqus.com/
-#  isso_domain: ""         # see https://posativ.org/isso/
-
-plugins:
- - jekyll-feed
-
+```powershell
+ridk install
 ```
 
-## MathJax
+### 2. Install project gems
 
-Contrast comes preinstalled with a leightweight alternative to MathJax called [KaTeX](https://katex.org/). To display equations in a post simply set `mathjax: true` in the article's front matter.
+```powershell
+bundle install
+```
 
-## License
+If `bundle` is not available in your current terminal PATH, use:
 
-[public domain](http://unlicense.org/)
+```powershell
+%USERPROFILE%\scoop\apps\ruby33\current\bin\bundle.bat install
+```
 
-## Screenshots
+### 3. Build the site
 
-![screenshot](https://user-images.githubusercontent.com/4943215/109431850-cd711780-7a08-11eb-8601-2763f2ee6bb4.png)
+```powershell
+bundle exec jekyll build
+```
 
-![screenshot](https://user-images.githubusercontent.com/4943215/109431832-b6cac080-7a08-11eb-9c5e-a058680c23a1.png)
+PATH fallback:
 
-![screenshot](https://user-images.githubusercontent.com/4943215/73125194-5f0b8b80-3fa4-11ea-805c-8387187503ad.png)
+```powershell
+%USERPROFILE%\scoop\apps\ruby33\current\bin\bundle.bat exec %USERPROFILE%\scoop\apps\ruby33\current\bin\jekyll.bat build
+```
+
+### 4. Serve locally
+
+```powershell
+bundle exec jekyll serve --host 127.0.0.1 --port 4000
+```
+
+PATH fallback:
+
+```powershell
+%USERPROFILE%\scoop\apps\ruby33\current\bin\bundle.bat exec %USERPROFILE%\scoop\apps\ruby33\current\bin\jekyll.bat serve --host 127.0.0.1 --port 4000
+```
+
+Open http://127.0.0.1:4000/ in your browser.
+
+## Notes
+
+- A local warning about missing GitHub API authentication in `jekyll-github-metadata` is expected.
+- If watch mode feels slow on Windows, you can optionally add `gem "wdm", ">= 0.1.0"` to improve file watching.
+- To print the currently resolved GitHub Pages dependency set, run `bundle exec github-pages versions`.
