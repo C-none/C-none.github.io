@@ -5,7 +5,7 @@ layout: post
 excerpt_separator: <!--more-->
 ---
 
-I have started building [Newbie-Renderer](https://github.com/C-none/Newbie-Renderer), a research-oriented renderer focused on C++23 modules, Slang, and Vulkan on RTX-class GPUs. This post records the current state and the next milestones.
+I have started developing [Newbie-Renderer](https://github.com/C-none/Newbie-Renderer), a real-time renderer built with C++23 modules, Slang, and Vulkan. Development is in progress, and I will share updates as it evolves.
 
 <!--more-->
 
@@ -33,23 +33,16 @@ In short, the base system is now strong enough to support higher-level rendering
 
 Near-term and mid-term milestones, aligned with the project TODO list:
 
-- GPU scene upload and residency management for meshes, materials, textures, and instances.
 - Scene-driven BLAS/TLAS build and update flow for ray tracing.
 - Light BVH / many-light sampling for scalable direct illumination.
 - Neural material system for learned BRDF/BSDF evaluation.
 - Texture filtering and sampling research paths: filter-after-shading, sample-reuse filtering, and ray-cone-aware LOD.
+- ...
 
-These goals are consistent with making the renderer both practical and research-friendly.
+These goals are consistent with making the renderer more practical.
 
 ## Link to neural-material notes
 
 The next key direction is neural appearance modeling. I wrote a separate learning note here:
 
 - [Neural material learning notes](/neural-material/)
-
-That note summarizes how two ideas connect:
-
-- A strong prior for neural BRDF fitting (learned shading frames).
-- A mathematically sound filtering strategy for nonlinear shading (stochastic filtering after shading).
-
-Together, they describe not only what to implement, but also why the implementation should be correct.

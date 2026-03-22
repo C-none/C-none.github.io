@@ -57,16 +57,19 @@ a:hover .icon
   width: 100%
 
 .katex
-  // Use LaTeX \huge (~2.0736x normalsize) as the default math scale.
-  font-size: 2.0736em !important
+  // Use !important to override any competing styles from KaTeX CSS load order
+  font-size: 1.5em !important
   overflow-x: auto
   overflow-y: hidden
 
 .katex-display > .katex
-  font-size: 2.0736em !important
+  font-size: 1.5em !important
+  display: block
+  text-align: center
 
+// MathJax fallback support if used
 .MathJax, .MathJax_Display, mjx-container
-  font-size: 2.0736em !important
+  font-size: 1.5em !important
 
 .rouge-table
   &, th, td, tr, pre

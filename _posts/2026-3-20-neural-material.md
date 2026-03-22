@@ -25,39 +25,48 @@ mathjax: true
 
 This note records what matters most for my Newbie-Renderer roadmap: how to make neural material fitting easier, and how to make filtering/sampling mathematically meaningful in a nonlinear shading pipeline.
 
-The key message is simple: for neural fitting, strong priors and problem decomposition are not optional details. They are the reason the model can fit complex appearance efficiently.
+The key message is simple: for neural fitting, strong priors and problem decomposition are not options. They are the reason the model can fit complex appearance efficiently.
 
 ## Paper 1: Real-Time Neural Appearance Models
 
 Reference: [Real-Time Neural Appearance Models](https://research.nvidia.com/labs/rtr/neural_appearance_models/)
 
-The pipeline uses latent textures plus neural decoders to predict BRDF behavior and sampling information. A critical step is applying graphics priors before MLP decoding.
+### Problem it solves
 
-### Key prior: transform directions into learned shading frames
+The paper targets a practical gap: real-time renderers need film-style layered materials, but classic material graphs and layered BSDF evaluation are too expensive to run directly at interactive rates.
 
-Instead of feeding raw global-space directions directly to the network, the method first transforms incident and outgoing directions into learned local shading frames.
+More specifically, the system must do all of the following at once:
 
-Intuitively, this gives the decoder a cleaner coordinate system for anisotropy, layer orientation, and view/light interactions.
+- preserve complex appearance (anisotropy, layered effects, mesoscale detail),
+- provide low-noise importance sampling,
+- support stable level-of-detail behavior,
+- and run fast enough inside a real-time path tracer.
 
-If we denote the shading-frame transform by $T_f(\cdot)$ and latent code by $z(x)$, the decoder is conceptually learning:
+So the core problem is not just "fit a BRDF". It is building a compact representation that can be evaluated and sampled efficiently under real-time constraints.
+
+### High-level method
+
+The solution combines learned representation with graphics priors.
+
+- A hierarchical latent texture stores local material state.
+- At shading time, the renderer fetches latent code and runs neural decoders.
+- One decoder predicts BRDF-related quantities.
+- Another decoder predicts parameters of an analytic sampling distribution (a microfacet-style prior) to generate/evaluate sampling PDFs.
+- The decoders are executed inline in the path tracer using hardware-accelerated tensor operations.
+
+Conceptually, the model learns a decomposition: latent textures encode "what material is here", and decoders map that state plus directions to reflectance and sampling behavior.
+
+### Small takeaway from shading frames
+
+A key insight is to transform directions into learned local shading frames before MLP decoding. If $T_f(\cdot)$ is the frame transform and $z(x)$ is latent code, the decoder effectively learns:
 
 $$
 g \approx D\left(z(x),\,T_f(\omega_i),\,T_f(\omega_o)\right)
 $$
 
-instead of learning the same behavior directly in a less structured global coordinate representation.
+instead of learning directly from raw global-space directions.
 
-### Why this improves fitting
-
-- The prior reduces entanglement between geometry orientation and reflectance response.
-- The network can spend capacity on material behavior instead of re-learning coordinate symmetries.
-- Decomposition creates a smaller and better-conditioned function space.
-
-For neural appearance fitting, this is the practical lesson: use priors to simplify the target function before asking the network to approximate it.
-
-### How this paper solves the neural-material fitting problem
-
-The hard part in neural materials is not only fitting a complicated BRDF, but fitting it in a way that also supports efficient importance sampling and stable behavior across anisotropy and LOD. This paper addresses that by decomposing the problem: hierarchical latent textures carry local material state, while neural decoders with graphics priors predict both reflectance and sampling information. In particular, learned shading-frame transforms make directional dependencies easier to model, and the microfacet-based sampling prior gives a practical path to low-noise real-time rendering.
+This is a useful neural-material lesson: when directional structure is strong, first choose a better coordinate system, then let the network fit the residual complexity.
 
 
 ## Paper 2: Filtering After Shading With Stochastic Texture Filtering
@@ -97,12 +106,3 @@ In neural materials, many intermediate quantities are nonlinear functions of lat
 That is why naive linear interpolation in parameter/latent space often has no clear physical or mathematical meaning for final BRDF behavior. It can produce mixtures that do not correspond to the intended shaded outcome.
 
 By contrast, stochastic filtering after shading keeps the integration target aligned with the rendered quantity. In that sense, the method remains mathematically meaningful in the neural-material pipeline.
-
-## Practical notes for Newbie-Renderer
-
-- Use shading-frame transforms as a first-class prior in neural BRDF decoder inputs.
-- Keep sampling design coupled with decoder outputs (importance sampling path).
-- Prefer filtering formulations that estimate filtered shaded radiance, not pre-shaded parameter averages.
-- Combine stochastic filtering with denoising and temporal reuse for practical real-time stability.
-
-For project context, see [Newbie-Renderer](/newbie-renderer/).
