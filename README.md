@@ -26,7 +26,7 @@ Version sources:
 ### 1. Install prerequisites
 
 ```powershell
-%USERPROFILE%\scoop\shims\scoop.cmd install ruby33 msys2
+scoop install ruby33 msys2
 ```
 
 Then run MSYS2 toolchain setup once:
@@ -41,34 +41,16 @@ ridk install
 bundle install
 ```
 
-If `bundle` is not available in your current terminal PATH, use:
-
-```powershell
-%USERPROFILE%\scoop\apps\ruby33\current\bin\bundle.bat install
-```
-
 ### 3. Build the site
 
 ```powershell
 bundle exec jekyll build
 ```
 
-PATH fallback:
-
-```powershell
-%USERPROFILE%\scoop\apps\ruby33\current\bin\bundle.bat exec %USERPROFILE%\scoop\apps\ruby33\current\bin\jekyll.bat build
-```
-
 ### 4. Serve locally
 
 ```powershell
 bundle exec jekyll serve --host 127.0.0.1 --port 4000
-```
-
-PATH fallback:
-
-```powershell
-%USERPROFILE%\scoop\apps\ruby33\current\bin\bundle.bat exec %USERPROFILE%\scoop\apps\ruby33\current\bin\jekyll.bat serve --host 127.0.0.1 --port 4000
 ```
 
 Open http://127.0.0.1:4000/ in your browser.

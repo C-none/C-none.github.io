@@ -19,7 +19,7 @@ mathjax: true
 
 <!--more-->
 
-<div class="more"><a href="https://research.nvidia.com/labs/rtr/neural_appearance_models/">Real-Time Neural Appearance Models</a> | <a href="https://research.nvidia.com/labs/rtr/publication/pharr2024stochtex/">Filtering After Shading</a> | <a href="https://arxiv.org/abs/2407.06107">arXiv</a></div>
+<div class="more"><a href="https://research.nvidia.com/labs/rtr/neural_appearance_models/">Real-Time Neural Appearance Models</a> | <a href="https://research.nvidia.com/labs/rtr/publication/pharr2024stochtex/">Filtering After Shading</a></div>
 
 ## Introduction
 
@@ -55,12 +55,16 @@ instead of learning the same behavior directly in a less structured global coord
 
 For neural appearance fitting, this is the practical lesson: use priors to simplify the target function before asking the network to approximate it.
 
+### How this paper solves the neural-material fitting problem
+
+The hard part in neural materials is not only fitting a complicated BRDF, but fitting it in a way that also supports efficient importance sampling and stable behavior across anisotropy and LOD. This paper addresses that by decomposing the problem: hierarchical latent textures carry local material state, while neural decoders with graphics priors predict both reflectance and sampling information. In particular, learned shading-frame transforms make directional dependencies easier to model, and the microfacet-based sampling prior gives a practical path to low-noise real-time rendering.
+
+
 ## Paper 2: Filtering After Shading With Stochastic Texture Filtering
 
 References:
 
 - [NVIDIA page](https://research.nvidia.com/labs/rtr/publication/pharr2024stochtex/)
-- [arXiv paper](https://arxiv.org/abs/2407.06107)
 
 This work argues that in general we should filter after shading, not before BSDF evaluation.
 
@@ -83,6 +87,8 @@ $$
 $$
 
 When designed well, this provides a mathematically valid estimator of the filtered shaded result, and the paper shows the additional stochastic error is manageable.
+
+In the neural-material setting, this resolves the core mismatch that appears when nonlinear shading is driven by latent features: pre-filtered parameters generally do not correspond to filtered rendered appearance. By shifting the estimator target to filtered shaded radiance itself, the method keeps the math aligned with what we actually display, while remaining compatible with compressed and neural texture representations.
 
 ## Neural material context: why this matters
 
