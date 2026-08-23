@@ -13,9 +13,9 @@ My name is Huzhiyuan Long (龙胡志远). My research interest lies in computer 
 
 ## News
 
-I have launched [Newbie-Renderer](https://github.com/C-none/Newbie-Renderer), a Vulkan research renderer built around C++26 modules, Slang, and Vulkan 1.4 for Windows and NVIDIA Ada or Blackwell GPUs. Explore the [interactive project showcase](https://c-none.github.io/Newbie-Renderer/).
+<time class="news-year" datetime="2026">2026</time> I have launched [Newbie-Renderer](https://github.com/C-none/Newbie-Renderer), a Vulkan research renderer built around C++26 modules, Slang, and Vulkan 1.4 for Windows and NVIDIA Ada or Blackwell GPUs. Explore the [interactive project showcase](https://c-none.github.io/Newbie-Renderer/).
 
-I finished a real-time ray tracing [demo](https://c-none.github.io/Web-RTRT) based on WebGPU. Check this [blog](https://c-none.github.io/ray-tracing-on-WebGPU/) for details.
+<time class="news-year" datetime="2024">2024</time> I finished a real-time ray tracing [demo](https://c-none.github.io/Web-RTRT) based on WebGPU. Check this [blog](https://c-none.github.io/ray-tracing-on-WebGPU/) for details.
 
 <!-- ------------------
 

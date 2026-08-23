@@ -1,8 +1,35 @@
-{%- assign posts = paginator.posts | default: site.posts -%} {% for post in
-posts %} {% if post.categories contains cat %}
+{%- assign posts = paginator.posts | default: site.posts -%}
+{%- assign posts = posts | concat: site.external_posts | sort: "date" | reverse -%}
+{% for post in posts %} {% if post.categories contains cat %}
 <article>
-  {% include meta.html post=post %} {{ post.excerpt }}
+  {% include meta.html post=post %}
+  {% if post.external_url %}
+  {% if post.image %}
+  <table style="width:100%;">
+    <tr>
+      <td class="td-img">
+        <a href="{{ post.external_url }}">
+          <img
+            src="{{ post.image | relative_url }}"
+            alt="{{ post.image_alt | default: post.title }}"
+            decoding="async"
+          />
+        </a>
+      </td>
+      <td class="td-text">
+        {{ post.summary }}
+      </td>
+    </tr>
+  </table>
+  {% else %}
+  <p>{{ post.summary }}</p>
+  {% endif %}
+  {% else %}
+  {{ post.excerpt }}
+  {% endif %}
+  {% unless post.external_url %}
   <!-- <div class="more"><a href="{{ post.url | relative_url }}">read more</a></div> -->
+  {% endunless %}
 </article>
 {% endif %} {% endfor %}
 

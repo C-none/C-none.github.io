@@ -7,7 +7,11 @@ lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 
-# GitHub Pages metadata (prevents jekyll-github-metadata repo detection failures in CI)
+collections:
+  external_posts:
+    output: false
+
+# Site URL metadata
 url: "https://c-none.github.io"
 baseurl: ""
 repository: "C-none/C-none.github.io"

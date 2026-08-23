@@ -1,3 +1,6 @@
+@use "sass:color"
+@use "theme" as *
+
 .title
   font-size: 1.25em
 
@@ -24,6 +27,18 @@
   min-width: 10ch
   min-height: 1.75em
   margin: 0 .2em
+
+.news-year
+  display: inline-block
+  margin-right: .65em
+  padding: 0 .4em
+  border: 1px solid currentColor
+  border-radius: 2px
+  color: $link-color
+  font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace
+  font-size: .85em
+  font-weight: $heading-weight
+  letter-spacing: .03em
 
 .img-square
   object-fit: cover
@@ -89,7 +104,7 @@ a:hover .icon
 
 .highlight // https://github.com/richleland/pygments-css/blob/master/monokai.css <http://unlicense.org>
   pre
-    background: rgba(lighten($dark, 6%), 0.9)
+    background: rgba(color.adjust($dark, $lightness: 6%, $space: hsl), 0.9)
     color: white
   .c
     color: #a29f90

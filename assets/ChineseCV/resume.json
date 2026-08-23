@@ -1,0 +1,291 @@
+{
+  "version": 1,
+  "profile": {
+    "name": {
+      "zh": "龙胡志远",
+      "en": "Huzhiyuan Long"
+    },
+    "email": "huzhiyuan.long@outlook.com",
+    "website": "https://c-none.github.io",
+    "wechat_id": "miseinenn-lh"
+  },
+  "education": [
+    {
+      "id": "hku-msc",
+      "institution": {
+        "zh": "香港大学",
+        "en": "The University of Hong Kong"
+      },
+      "field": {
+        "zh": "计算机科学",
+        "en": "Computer Science"
+      },
+      "degree": {
+        "zh": "硕士",
+        "en": "MSc"
+      },
+      "start": "2025-09",
+      "end": "2026-12"
+    },
+    {
+      "id": "tongji-beng",
+      "institution": {
+        "zh": "同济大学",
+        "en": "Tongji University"
+      },
+      "field": {
+        "zh": "软件工程",
+        "en": "Software Engineering"
+      },
+      "degree": {
+        "zh": "学士",
+        "en": "B.Eng."
+      },
+      "start": "2020-09",
+      "end": "2024-07"
+    }
+  ],
+  "experience": [
+    {
+      "id": "netease-graphics-intern",
+      "company": {
+        "zh": "网易互娱，荒野事业部",
+        "en": "NetEase Games — Knives Out Business Unit"
+      },
+      "position": {
+        "zh": "图形开发实习",
+        "en": "Graphics Development Intern"
+      },
+      "start": "2026-05",
+      "end": "2026-08",
+      "bullets": [
+        {
+          "zh": "完善光追组件，构建 Path Tracer 作为引擎的标准光照能量参考，添加对自发光光源的采样支持。",
+          "en": "Enhanced the ray-tracing component by building a path tracer as the engine's global illumination reference and adding emissive-light sampling."
+        },
+        {
+          "zh": "拓展 GPU Lightmass 功能，支持 World Composition 场景中的分区烘焙，从而降低峰值显存与内存占用，提升大规模场景的烘焙效率与稳定性。",
+          "en": "Extended GPU Lightmass to support partitioned baking for World Composition scenes, reducing peak VRAM and memory usage while improving baking efficiency and stability for large-scale scenes."
+        }
+      ]
+    },
+    {
+      "id": "tencent-engine-intern",
+      "company": {
+        "zh": "腾讯，光子工作室",
+        "en": "Tencent — LIGHTSPEED STUDIOS"
+      },
+      "position": {
+        "zh": "游戏引擎实习",
+        "en": "Game Engine Intern"
+      },
+      "start": "2025-05",
+      "end": "2025-08",
+      "bullets": [
+        {
+          "zh": "在 UE5 中复现 RTXGI 2 中的 SHaRC，以代替 Lumen 中的 Surface Cache 作为世界空间的 Radiance Cache。",
+          "en": "Reimplemented SHaRC from RTXGI 2 in UE5 to replace Lumen's surface cache as a world-space radiance cache."
+        },
+        {
+          "zh": "通过实验分析，评估两种缓存系统的优缺点，为优化游戏引擎中的 Radiance Cache 提供依据。",
+          "en": "Conducted controlled experiments to compare the two cache systems, quantify trade-offs, and guide radiance cache optimization."
+        }
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "id": "srssis-cad-graphics-2023",
+      "title": {
+        "zh": "SRSSIS: Super-Resolution Screen Space Irradiance Sampling for Lightweight Collaborative Web3D Rendering Architecture",
+        "en": "SRSSIS: Super-Resolution Screen Space Irradiance Sampling for Lightweight Collaborative Web3D Rendering Architecture"
+      },
+      "authors": [
+        {
+          "name": "Huzhiyuan Long",
+          "is_self": true
+        },
+        {
+          "name": "Yufan Yang",
+          "is_self": false
+        },
+        {
+          "name": "Chang Liu",
+          "is_self": false
+        },
+        {
+          "name": "Jinyuan Jia",
+          "is_self": false
+        }
+      ],
+      "venue": {
+        "zh": "CAD/graphics（CCF-C）",
+        "en": "CAD/Graphics (CCF-C)"
+      },
+      "date": "2023-08",
+      "bullets": [
+        {
+          "zh": "提出一种基于超分辨率的协同式渲染架构。",
+          "en": "Proposed a super-resolution-based collaborative rendering architecture."
+        }
+      ]
+    }
+  ],
+  "projects": [
+        {
+      "id": "newbie-renderer",
+      "title": {
+        "zh": "实时神经材质渲染器",
+        "en": "Real-time Neural Material Renderer"
+      },
+      "bullets": [
+        {
+          "zh": "实现 Vulkan/Slang GPU Neural Appearance 训练器，学习材质的漫反射与镜面反射响应。",
+          "en": "Implemented a Vulkan/Slang GPU Neural Appearance trainer for diffuse and specular material responses."
+        },
+        {
+          "zh": "基于 C++26 模块、Slang 与 Vulkan 1.4 构建渲染器，集成路径追踪与 DLSS Ray Reconstruction。",
+          "en": "Built a Vulkan 1.4 research renderer with C++26 modules and Slang, integrating path tracing and DLSS Ray Reconstruction."
+        },
+        {
+          "zh": "设计跨帧多队列渲染依赖图，自动推导资源屏障、布局与队列所有权，使图形、计算和传输任务可重叠执行。",
+          "en": "Designed a cross-frame, multi-queue render dependency graph that derives resource barriers, layouts, and queue ownership to overlap graphics, compute, and transfer work."
+        }
+      ]
+    },
+    {
+      "id": "webgpu-ray-tracing",
+      "title": {
+        "zh": "WebGPU 光线追踪",
+        "en": "WebGPU Ray Tracing"
+      },
+      "bullets": [
+        {
+          "zh": "在 WebGPU 上构建了混合渲染管线，其中包含 V-buffer、光线追踪、降噪、超分辨率四个模块。",
+          "en": "Built a hybrid rendering pipeline on WebGPU with V-buffer, ray tracing, denoising, and super-resolution modules."
+        },
+        {
+          "zh": "在光线追踪模块中，使用基于 SAH 的 BVH 作为加速结构，复现 ReSTIR DI & GI 实现实时全局光照，结合 SVGF 和 ReLAX 实现降噪模块。",
+          "en": "Implemented an SAH-based BVH, reproduced ReSTIR DI & GI for real-time global illumination, and integrated SVGF and ReLAX for denoising."
+        }
+      ]
+    }
+  ],
+  "disabled_projects": [
+    {
+      "id": "screen-probe-precomputation",
+      "title": {
+        "zh": "Screen Probe 预计算",
+        "en": "Screen Probe Precomputation"
+      },
+      "bullets": [
+        {
+          "zh": "从属于基于 UE5 Lumen 的协同式渲染系统项目，负责在项目初期提供代替 Lumen 输出 Screen Probe 的接口，用于测试协同式渲染系统。",
+          "en": "For a collaborative rendering system based on UE5 Lumen, delivered an early alternative interface for outputting screen probes to test the rendering pipeline."
+        },
+        {
+          "zh": "基于 Vulkan 的硬件光线追踪管线。",
+          "en": "Implemented on a Vulkan hardware ray-tracing pipeline."
+        }
+      ]
+    },
+    {
+      "id": "precomputed-visibility-volumes",
+      "title": {
+        "zh": "预计算可见性体积",
+        "en": "Precomputed Visibility Volumes"
+      },
+      "bullets": [
+        {
+          "zh": "基于 Vulkan，在实例化场景中预计算每个采样点的可见物体集合及其权重，从而计算每个单元格内的可见集。",
+          "en": "In instanced Vulkan scenes, precomputed each sample point's visible-object set and weights to form per-cell visibility sets."
+        },
+        {
+          "zh": "可见性体积用于辅助在前端实时加载模型时的调度传输。",
+          "en": "Used visibility volumes to aid scheduling and streaming during real-time client-side model loading."
+        }
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "id": "ccpc-shanghai-bronze",
+      "title": {
+        "zh": "中国大学生程序设计竞赛－上海市大学生程序设计竞赛，铜奖",
+        "en": "China Collegiate Programming Contest — Shanghai Collegiate Programming Contest, Bronze Medal"
+      },
+      "dates": [
+        "2022-09"
+      ]
+    },
+    {
+      "id": "ladder-tournament-third",
+      "title": {
+        "zh": "团体程序设计天梯赛，个人三等奖",
+        "en": "Group Programming Ladder Tournament, Individual Third Prize"
+      },
+      "dates": [
+        "2022-05"
+      ]
+    },
+    {
+      "id": "tongji-scholarship-third",
+      "title": {
+        "zh": "同济大学校级优秀奖学金，三等奖 ×2",
+        "en": "Tongji University Undergraduate School-level Scholarship, Third Prize ×2"
+      },
+      "dates": [
+        "2022",
+        "2021"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "programming-languages",
+      "label": {
+        "zh": "编程语言",
+        "en": "Programming Languages"
+      },
+      "values": [
+        "C/C++",
+        "JavaScript",
+        "WGSL",
+        "GLSL",
+        "Python"
+      ]
+    },
+    {
+      "id": "frameworks-tools",
+      "label": {
+        "zh": "工具框架",
+        "en": "Frameworks and Tools"
+      },
+      "values": [
+        "Vulkan",
+        "WebGPU",
+        "UE",
+        "Three.js",
+        "Blender",
+        "Unity"
+      ]
+    },
+    {
+      "id": "spoken-languages",
+      "label": {
+        "zh": "语言",
+        "en": "Languages"
+      },
+      "values": [
+        {
+          "zh": "英语",
+          "en": "English"
+        },
+        {
+          "zh": "日语（JLPT N2）",
+          "en": "Japanese (JLPT N2)"
+        }
+      ]
+    }
+  ]
+}
