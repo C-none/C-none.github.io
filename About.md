@@ -5,7 +5,7 @@ permalink: "/"
 layout: page
 ---
 
-My name is Huzhiyuan Long (龙胡志远). My research interest lies in computer graphics, with a primary focus on rendering. Please feel free to contact me via [email](javascript:linkTo_UnCryptMailto('nbjmup;uftu');). Here is my [CV](/assets/ChineseCV/lhzy_resume.pdf).
+My name is Huzhiyuan Long (龙胡志远). My research interest lies in computer graphics, with a primary focus on rendering. Please feel free to contact me via [email](javascript:linkTo_UnCryptMailto('nbjmup;uftu');). Here are my CVs: [English](/assets/ChineseCV/lhzy_resume_en.pdf) and [中文](/assets/ChineseCV/lhzy_resume_zh.pdf).
 
  <!-- I had the privilege of being mentored by Professor [Jia](https://sse.tongji.edu.cn/info/1204/3256.htm) in [his lab](https://smart3d.tongji.edu.cn/en/Home.htm) during my undergraduate studies. Our results were eventually published in [CCF CAD/Graphics 2023](https://dmcv.sjtu.edu.cn/cadgraphics2023/).  -->
 
@@ -13,7 +13,7 @@ My name is Huzhiyuan Long (龙胡志远). My research interest lies in computer 
 
 ## News
 
-I have started developing [Newbie-Renderer](https://github.com/C-none/Newbie-Renderer), a real-time renderer built with C++23 modules, Slang, and Vulkan. Development is in progress, and I will share updates as it evolves.
+I have launched [Newbie-Renderer](https://github.com/C-none/Newbie-Renderer), a Vulkan research renderer built around C++26 modules, Slang, and Vulkan 1.4 for Windows and NVIDIA Ada or Blackwell GPUs. Explore the [interactive project showcase](https://c-none.github.io/Newbie-Renderer/).
 
 I finished a real-time ray tracing [demo](https://c-none.github.io/Web-RTRT) based on WebGPU. Check this [blog](https://c-none.github.io/ray-tracing-on-WebGPU/) for details.
 

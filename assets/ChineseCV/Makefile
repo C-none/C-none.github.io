@@ -1,25 +1,20 @@
-SRC = $(wildcard *.tex)
+# Optional convenience wrapper for the bilingual YAML resume builder.
+RUBY ?= ruby
+BUILD := $(RUBY) build.rb
 
-PDFS = $(SRC:.tex=.pdf)
+.PHONY: all en zh validate clean
 
-all:	clean pdf
+all:
+	$(BUILD)
 
-en:	clean xelatex resume.tex
+en:
+	$(BUILD) --lang en
 
-zh_CN:	clean xelatex resume-zh_CN.tex
+zh:
+	$(BUILD) --lang zh
 
-pdf:	clean $(PDFS)
-
-%.pdf:  %.tex
-	xelatex $<
-
-ifeq ($(OS),Windows_NT)
-  # on Windows
-  RM = cmd //C del
-else
-  # on Unix/Linux
-  RM = rm -f
-endif
+validate:
+	$(BUILD) --validate-only
 
 clean:
-	$(RM) *.log *.aux *.bbl *.blg *.synctex.gz *.out *.toc *.lof *.idx *.ilg *.ind *.pdf
+	$(RUBY) -e "require 'fileutils'; FileUtils.rm_rf('.build')"
