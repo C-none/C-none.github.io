@@ -50,7 +50,7 @@
       "id": "netease-graphics-intern",
       "company": {
         "zh": "网易互娱，荒野事业部",
-        "en": "NetEase Games — Knives Out Business Unit"
+        "en": "NetEase Games — Wilderness Division"
       },
       "position": {
         "zh": "图形开发实习",
@@ -73,7 +73,7 @@
       "id": "tencent-engine-intern",
       "company": {
         "zh": "腾讯，光子工作室",
-        "en": "Tencent — LIGHTSPEED STUDIOS"
+        "en": "Tencent — Lightspeed Studios"
       },
       "position": {
         "zh": "游戏引擎实习",
@@ -263,11 +263,11 @@
       },
       "values": [
         "Vulkan",
+        "Slang",
         "WebGPU",
         "UE",
         "Three.js",
-        "Blender",
-        "Unity"
+        "Blender"
       ]
     },
     {
